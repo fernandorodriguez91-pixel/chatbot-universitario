@@ -45,24 +45,27 @@ gestor_respuestas = GestorRespuestas(base_conocimiento)
 
 import json
 import tempfile
+import base64
 
 google_sheets_reader = None
 if GOOGLE_SHEETS_AVAILABLE:
     try:
-      
-        GOOGLE_CREDENTIALS_JSON = os.getenv("GOOGLE_CREDENTIALS")
+        GOOGLE_CREDENTIALS_B64 = os.getenv("GOOGLE_CREDENTIALS_BASE64")
         SHEET_ID = os.getenv("GOOGLE_SHEETS_ID", "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo")
         
-        if GOOGLE_CREDENTIALS_JSON:
+        if GOOGLE_CREDENTIALS_B64:
+            # Decodificar base64
+            credentials_json = base64.b64decode(GOOGLE_CREDENTIALS_B64).decode('utf-8')
             
+            # Crear archivo temporal
             with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
-                f.write(GOOGLE_CREDENTIALS_JSON)
+                f.write(credentials_json)
                 CREDENTIALS_FILE = f.name
             
             google_sheets_reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
-            print("✅ Google Sheets Reader inicializado desde variables de entorno")
+            print("✅ Google Sheets Reader inicializado desde base64")
         else:
-            print("⚠️ GOOGLE_CREDENTIALS no configurada en variables de entorno")
+            print("⚠️ GOOGLE_CREDENTIALS_BASE64 no configurada")
             google_sheets_reader = None
             
     except Exception as e:
