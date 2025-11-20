@@ -43,13 +43,28 @@ base_datos = BaseDatos()
 base_conocimiento = BaseConocimiento()
 gestor_respuestas = GestorRespuestas(base_conocimiento)
 
+import json
+import tempfile
+
 google_sheets_reader = None
 if GOOGLE_SHEETS_AVAILABLE:
     try:
-        CREDENTIALS_FILE = "api/credentials.json"
-        SHEET_ID = "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo"
-        google_sheets_reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
-        print("✅ Google Sheets Reader inicializado correctamente")
+      
+        GOOGLE_CREDENTIALS_JSON = os.getenv("GOOGLE_CREDENTIALS")
+        SHEET_ID = os.getenv("GOOGLE_SHEETS_ID", "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo")
+        
+        if GOOGLE_CREDENTIALS_JSON:
+            
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+                f.write(GOOGLE_CREDENTIALS_JSON)
+                CREDENTIALS_FILE = f.name
+            
+            google_sheets_reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
+            print("✅ Google Sheets Reader inicializado desde variables de entorno")
+        else:
+            print("⚠️ GOOGLE_CREDENTIALS no configurada en variables de entorno")
+            google_sheets_reader = None
+            
     except Exception as e:
         print(f"❌ Error inicializando Google Sheets Reader: {e}")
         google_sheets_reader = None
