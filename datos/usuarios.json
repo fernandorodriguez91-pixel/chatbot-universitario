@@ -1,0 +1,92 @@
+{
+  "test123": {
+    "telefono": "test123",
+    "nombre": "Usuario de Prueba",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-10-24T15:33:55.350452",
+    "ultima_interaccion": "2025-10-24T15:33:55.350468",
+    "conversaciones": []
+  },
+  "5551234567": {
+    "telefono": "5551234567",
+    "nombre": "Juan",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-10-27T14:48:51.978956",
+    "ultima_interaccion": "2025-11-07T14:24:12.765838",
+    "conversaciones": []
+  },
+  "=5551234567": {
+    "telefono": "=5551234567",
+    "nombre": "=Juan Perez",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-10-27T14:58:45.879299",
+    "ultima_interaccion": "2025-10-29T14:11:50.197277",
+    "conversaciones": []
+  },
+  "=": {
+    "telefono": "=",
+    "nombre": "=",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-10-29T15:04:05.471616",
+    "ultima_interaccion": "2025-10-29T15:16:19.367148",
+    "conversaciones": []
+  },
+  "+5216651430146": {
+    "telefono": "+5216651430146",
+    "nombre": "+5216651430146",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-09T14:13:18.575165",
+    "ultima_interaccion": "2025-11-20T13:11:32.769415",
+    "conversaciones": []
+  },
+  "test": {
+    "telefono": "test",
+    "nombre": "usuario",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-09T15:06:20.614420",
+    "ultima_interaccion": "2025-11-09T15:06:20.691416",
+    "conversaciones": []
+  },
+  "": {
+    "telefono": "",
+    "nombre": "",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-09T23:17:58.195740",
+    "ultima_interaccion": "2025-11-09T23:46:49.521283",
+    "conversaciones": []
+  },
+  "+5216651310865": {
+    "telefono": "+5216651310865",
+    "nombre": "+5216651310865",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-10T00:30:40.320337",
+    "ultima_interaccion": "2025-11-10T00:30:42.362189",
+    "conversaciones": []
+  },
+  "+5216651048239": {
+    "telefono": "+5216651048239",
+    "nombre": "+5216651048239",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-10T15:00:33.492113",
+    "ultima_interaccion": "2025-11-10T15:02:29.369199",
+    "conversaciones": []
+  },
+  "+5216643568615": {
+    "telefono": "+5216643568615",
+    "nombre": "+5216643568615",
+    "carrera": null,
+    "semestre": null,
+    "fecha_registro": "2025-11-13T15:22:20.360783",
+    "ultima_interaccion": "2025-11-13T16:35:50.128737",
+    "conversaciones": []
+  }
+}

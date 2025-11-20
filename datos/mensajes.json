@@ -1,0 +1,3782 @@
+[
+  {
+    "id": "53a405d5-feac-4c39-aed1-db5eb1ed9489",
+    "telefono": "test123",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:34:01.579491",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9cdf9cd2-6360-4982-a389-84d304d51f68",
+    "telefono": "test123",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:34:01.581271",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "df160fa8-ed8c-4cac-92f4-7ce03534fefe",
+    "telefono": "test123",
+    "contenido": "Necesito Informacion de una carrera",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:34:14.294598",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7b1797d1-581d-47e4-8785-e8f9ffd20233",
+    "telefono": "test123",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingeniería en sistemas computacionales\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:34:14.316697",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3591f7b0-cec4-44e1-b5a2-8b159b52b360",
+    "telefono": "test123",
+    "contenido": "Mecanica",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:34:19.439363",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d93a5fa8-208e-4ba9-823f-6795e1995fca",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:34:19.460882",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7e617230-8e4c-44b1-823c-76521a5616b6",
+    "telefono": "test123",
+    "contenido": "carreras",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:34:44.122613",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f9275e18-f38b-4a3d-8f88-3ed2b8eb6751",
+    "telefono": "test123",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingeniería en sistemas computacionales\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:34:44.147737",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d3cb93a4-a5b8-4a8b-94ca-981841bb5fad",
+    "telefono": "test123",
+    "contenido": "ingenieria",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:34:52.625168",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8e89cd64-32ca-4fe6-a9e2-03acd38fc2f4",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:34:52.643486",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1996b427-6373-40d6-887d-eed9c1fb5b56",
+    "telefono": "test123",
+    "contenido": "horarios",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:04.025591",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7101ad9d-bec5-45a3-a728-7872bd5bfa5b",
+    "telefono": "test123",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:00 - 21:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:30 - 16:00\nℹ️ Desayuno: 7:30-10:00, Comida: 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:04.049129",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a09bc9e7-6823-490c-8eb1-fa4576b6424f",
+    "telefono": "test123",
+    "contenido": "tramites",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:18.344714",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "63a42054-cc5a-499d-9df0-e4e5d28121b1",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:18.365214",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7913047b-44d4-4c99-845b-973ca49c25b5",
+    "telefono": "test123",
+    "contenido": "tramites",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:24.655191",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c1d98681-8c01-4a7d-9c69-a9d7a1d01c93",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:24.678748",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "66d4aadf-7a0b-4849-8742-a3b3a92d41d7",
+    "telefono": "test123",
+    "contenido": "Trámites",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:35.256125",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "cf412114-c799-47dd-805f-95b02661d697",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:35.274607",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "386aeaa6-6355-40b9-8699-93052fdd7527",
+    "telefono": "test123",
+    "contenido": "eventos",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:42.412100",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a71ecc86-b198-425d-a85e-4a623cee35fc",
+    "telefono": "test123",
+    "contenido": "🎉 *PRÓXIMOS EVENTOS*\n\n🎓 *Exámenes Finales*\n📝 Periodo de exámenes finales del semestre\n📅 Del 25/11/2025 al 29/11/2025\n📍 Aulas asignadas\n⏳ Faltan 31 días\n\n🎓 *Inscripciones Semestre Primavera 2026*\n📝 Periodo de inscripción para el semestre de primavera\n📅 Del 01/12/2025 al 15/12/2025\n📍 En línea y control escolar\n⏳ Faltan 37 días\n\n",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:42.437481",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "65b03212-774a-4169-8fd5-635dddc0603d",
+    "telefono": "test123",
+    "contenido": "seria todo",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:35:58.529773",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c718288a-d2dd-4077-9af1-f7c3f2052494",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:35:58.551387",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e0e87be4-5f90-4e4e-b1e8-b46d62881936",
+    "telefono": "test123",
+    "contenido": "Hasta luego",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:36:03.199867",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d12dc5d8-ea9d-4a20-b088-edc6b5b061d9",
+    "telefono": "test123",
+    "contenido": "¡Nos vemos! 🎓 Mucho éxito en tus estudios.",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:36:03.226149",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "52981f83-5286-4f68-88be-645464694d05",
+    "telefono": "test123",
+    "contenido": "hola",
+    "es_bot": false,
+    "timestamp": "2025-10-24T15:59:57.705425",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9f67bfea-aa20-45e4-8401-1ab99c8e46b2",
+    "telefono": "test123",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T15:59:57.726493",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "249058fb-d4db-4b55-99eb-3426eb5c357d",
+    "telefono": "test123",
+    "contenido": "horario",
+    "es_bot": false,
+    "timestamp": "2025-10-24T16:00:17.869461",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0b10b75d-0667-42ac-9f58-70f8a187e7cd",
+    "telefono": "test123",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:00 - 21:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:30 - 16:00\nℹ️ Desayuno: 7:30-10:00, Comida: 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-10-24T16:00:17.897011",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4c78cc27-71b7-4404-aefd-7ef63a3e1e04",
+    "telefono": "test123",
+    "contenido": "carrera",
+    "es_bot": false,
+    "timestamp": "2025-10-24T16:00:44.656422",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "296532a7-c9f5-4445-b518-3686e83d97d9",
+    "telefono": "test123",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingeniería en sistemas computacionales\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T16:00:44.681230",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9d22df0b-3325-4b0d-ae10-7b7eb15fbeb5",
+    "telefono": "test123",
+    "contenido": "adios",
+    "es_bot": false,
+    "timestamp": "2025-10-24T16:00:56.775021",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7b0e0f12-4f25-4832-9fda-d5ed70b164f3",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-24T16:00:56.797932",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "01160d29-c564-4ef3-9613-0ef1d10f335e",
+    "telefono": "test123",
+    "contenido": "hasta luego",
+    "es_bot": false,
+    "timestamp": "2025-10-24T16:01:04.151604",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "993c8095-6b6e-4037-ad3c-f8df92a067b6",
+    "telefono": "test123",
+    "contenido": "¡Nos vemos! 🎓 Mucho éxito en tus estudios.",
+    "es_bot": true,
+    "timestamp": "2025-10-24T16:01:04.179709",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5dc66fc9-0af2-437b-b968-798ae86b790f",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T14:48:51.979563",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b2256ac8-a783-4e0e-90ff-4c568a676621",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T14:48:51.988704",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b5ec0315-e115-45b3-a797-7b566e69caa4",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T14:57:56.846220",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2c8b2533-c7ff-4b10-a10c-47a298587985",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T14:57:56.862904",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b214c4cc-2ab2-4095-a7d6-84e9f2ffbac6",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T14:58:45.880317",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5b477ad1-9840-4bfc-8e25-98edb0a7975c",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T14:58:45.889627",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dec0bb05-6f35-4a6c-92bb-9f92863f870e",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T14:59:33.547643",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bbaa19a0-e8e5-4f68-ac5e-abd519df73b3",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T14:59:33.556283",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4edb704e-0644-43e7-aa7c-e0790f2f8180",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T14:59:46.816031",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8c952868-3c91-4e1a-8f61-a204f0d96ade",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T14:59:46.833169",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c88ecef4-8717-4a9f-b6bf-f9946dbb8050",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T15:07:09.266917",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9ff827a7-7bfe-4a14-b52e-de70e5c65b0e",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T15:07:09.282564",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a8f4b796-d8f1-4f83-abc6-b14c9e5822c0",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T15:11:07.984867",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4f48e6da-a88a-421b-9411-18311ecdf6e9",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T15:11:07.998560",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0aa8da11-c1bb-41b4-9ba7-a8a1938f7d4d",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-27T15:18:58.797718",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ad2b42f8-3207-4948-ad4b-45cf1090b719",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T15:18:58.812754",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0f4ed960-a46e-4055-803d-3f54fc7ebe70",
+    "telefono": "=5551234567",
+    "contenido": "=Hola desde el test final",
+    "es_bot": false,
+    "timestamp": "2025-10-27T15:19:11.520766",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fe5040f6-aaf9-4734-b2cc-587da7c0eda5",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-27T15:19:11.529397",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4f9d8143-a4fa-4058-97ec-39c1e868e774",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:04.536099",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2cf82f6c-3035-468b-83d8-da420004a928",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:04.550333",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "281b6489-649f-4f16-b360-a9a1af144560",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:04.591820",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "731ea834-86dc-4ff3-96bb-47f6037e3ae0",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:04.608180",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d21b813a-097e-4e58-a2b0-d175b910d51d",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:04.636172",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4f5f143c-40f9-4ef8-bd2f-acb9d1bd3295",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:04.650726",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "31850633-a0fe-4fd6-91b4-e46bb881969c",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:05.031712",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e931079b-c2aa-4bcd-b447-ce8b7103e9a6",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:05.049311",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8b9378b2-a394-4f68-a440-6351f3ceedf0",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:05.078198",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "947c8597-5019-4af3-b72e-5116454386b1",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:05.091404",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "cd55c5b6-cd7f-4eb9-9549-612850c1fdb5",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-28T13:04:05.118415",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bfc06849-f7ab-42d0-9eec-23b32ab082e5",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-28T13:04:05.133422",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e356953f-b499-44aa-af18-45c0a23f63ba",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-29T14:11:50.098080",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1dbe360a-0e8a-4d3d-849e-9560b1c3e38c",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T14:11:50.109554",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3cbffd62-37b7-431d-8631-9728891776dd",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-29T14:11:50.145454",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "631305c4-cc04-456a-b308-d7d27dd36644",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T14:11:50.161702",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e52e907a-9adf-455a-ad7c-c71baba8ed67",
+    "telefono": "=5551234567",
+    "contenido": "=Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-29T14:11:50.197907",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "413285e3-a8a5-4200-b881-c70b57f5a977",
+    "telefono": "=5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T14:11:50.216880",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "92ad2098-fb8f-49b8-9f24-d092d0e88eed",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:05.472596",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8d89909d-71b3-4104-8507-19282d617ed6",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:05.490670",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a33f79ac-7e01-489f-a7cc-579e2640c9a7",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:05.525089",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "df958942-08a1-48a3-8c12-db9f13bce9df",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:05.540456",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "40a2400e-1f88-4dfa-82e1-3c74efce1a3b",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:05.571041",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9c23a689-fb74-4b35-a161-252bac09bc23",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:05.586281",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "75f97342-875e-48ae-a13c-595350789b65",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:18.120410",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b4343651-a578-4863-95a3-7fcedb4c5e79",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:18.134874",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ace3e119-74e3-48a0-acba-954cdc1d0e42",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:18.163423",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "547d02a6-c363-4e48-a603-3a9f2a83cfed",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:18.176178",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "364ec9d6-fb4b-4a29-93d9-bcca5e9b4106",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:04:18.204578",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a81eba7b-6a8e-40ef-ac5d-2fd26e672a00",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:04:18.218056",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "78ddc709-2d08-4d72-a946-f49d583c8a56",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:06:18.589559",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "757227f9-7b46-4152-82fe-6796a21f0e31",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:06:18.597476",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8fcc6e0e-13bb-471f-b0aa-7e80325e55a4",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:06:18.613840",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "db39f4c8-36a6-4b29-b5d0-7e129a1f7033",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:06:18.620271",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5f8b5724-9269-4435-982f-9a9c338ef65b",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:06:18.634783",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a9794d64-87f7-4c4c-a591-3e5597bd2276",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:06:18.641486",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8fab455f-903f-4afe-ad15-8cb6bcb0a6b0",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:44.500545",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "61c43ae8-2d2e-4bcb-a588-80b156a4cf63",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:44.508946",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "05d416ef-a6d1-4a25-b77c-ca8fd1263393",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:44.524656",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b4827cff-0fcd-4119-91ca-cadc57ecd756",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:44.531630",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3f66ce2f-c58d-4ba1-9777-26f85a5bd437",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:44.546732",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2dad926e-7d8d-43b9-ac2c-737c17d42cdd",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:44.554268",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0bde309e-b718-41ab-9c73-148034211503",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:54.133105",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "15b7b9b6-2875-423d-9284-775c7b3f7ac3",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:54.140485",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f64c9b85-b8be-41c1-a970-5976523799c8",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:54.156094",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bea8640d-970d-4fab-a497-2ff2ff568e9c",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:54.163385",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fb4e5e96-0e26-4d4c-9213-5fd0bba8507a",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:07:54.179637",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "74941991-f6ec-40f3-87b9-63f7988f8996",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:07:54.187065",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1c70424b-8e9c-4d34-bcba-263d2257b786",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:03.361277",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8e826e4c-77f4-4917-9eec-9a8408076f05",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:03.369019",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ee13b775-8dc5-4c7e-805f-0d7553e35dcd",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:03.384158",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2c503bc1-3030-487e-9b8d-f926e320fcab",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:03.391043",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "46ad97f6-4ee3-426f-8012-32038b0734bb",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:03.406683",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "635ce12f-42c6-41ea-92d1-3190c1d4c072",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:03.414082",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bb366575-05ec-4952-9770-2511af00704f",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:47.379612",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b8224d26-6df5-4630-aa08-10ed9009f7d2",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:47.387754",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5ad3db36-8307-4972-8c75-e299b47198ac",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:47.404862",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "40c03be5-8cf1-4562-86fd-b611c1a91574",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:47.412111",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "72568e14-3fa7-41a4-b65f-c35769eae376",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:08:47.427145",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "64d90f6b-a75a-42a1-83a4-5c99b835484f",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:08:47.434138",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8bcec741-326d-45cc-80f1-36319e376c36",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:10:26.514505",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e7038c54-510f-4158-9a3b-5725e7124bf6",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:10:26.522793",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "82891529-3b5f-4f38-ba6a-d020b94b182b",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:11:43.801364",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "779f498b-d91e-4b2c-a38b-6018fa7bc90c",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:11:43.817622",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b25d9def-8815-45b7-b4a5-4ab0dcafc1ed",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:11:43.847439",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "426a4f32-c8cf-4d5b-86b3-87f0ccce6567",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:11:43.861617",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0f32df8e-82be-48d4-b9fc-5ed5cff3af00",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:11:43.888507",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "daa61d77-7b6d-41d4-a256-4f58d15a17f0",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:11:43.902867",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bba4d1ef-f3c8-4f6c-8669-23cd410bb7bf",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:12:10.022251",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5191f5e7-8e6c-467f-a740-d221f762d9be",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:12:10.030219",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fe73696d-046a-4434-87d2-b718c566660f",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:12:10.046858",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ecd5caf6-7543-4b47-b518-203e2ab1e0fa",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:12:10.054762",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "effcd267-b544-49be-bf9f-2e16010d5b78",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:12:10.071013",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "44bf9bf4-7949-498f-ad72-0266767f0f39",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:12:10.079267",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c4a7275c-3be5-4f2c-901e-ad1574cd0c75",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:16:19.317522",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "36e49158-f35e-40a3-b65f-9f1b6d639548",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:16:19.326122",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fdbe7365-3824-40cc-9678-4c7a17990a9e",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:16:19.342804",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4e1076a9-d7f7-4688-b414-5cd44507ff5a",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:16:19.351032",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4324633c-0ea5-4bea-9a65-69266b4ba906",
+    "telefono": "=",
+    "contenido": "=",
+    "es_bot": false,
+    "timestamp": "2025-10-29T15:16:19.367626",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3b14c388-6051-4bf5-afb0-39608449d567",
+    "telefono": "=",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-10-29T15:16:19.375509",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "106347b6-c190-4f9b-aa47-5b6b0f1c7675",
+    "telefono": "test123",
+    "contenido": "hola",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:22:18.734327",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8b7e42eb-fce4-4c59-b1d7-6ca4b4e607f8",
+    "telefono": "test123",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:22:18.750477",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "872a06ae-4326-4435-b3b6-a194442546a4",
+    "telefono": "test123",
+    "contenido": "horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:22:25.949424",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bdf3c9e9-6fe0-4f7d-9558-83a6bb32adf6",
+    "telefono": "test123",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:00 - 21:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 07:30 - 16:00\nℹ️ Desayuno: 7:30-10:00, Comida: 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:22:25.966014",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8c4d8b8b-900e-4365-be44-fce58d3ea1d5",
+    "telefono": "test123",
+    "contenido": "hola",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:22:32.626213",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "626c5c31-6f7d-4ab6-ab5a-bc214bd850bd",
+    "telefono": "test123",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:22:32.644442",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4b825daa-705e-4527-aa64-baf5051974b0",
+    "telefono": "test123",
+    "contenido": "eventos",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:22:37.436950",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0bfd81a2-461b-4c45-8787-b74812fb1ddc",
+    "telefono": "test123",
+    "contenido": "🎉 *PRÓXIMOS EVENTOS*\n\n🎓 *Exámenes Finales*\n📝 Periodo de exámenes finales del semestre\n📅 Del 25/11/2025 al 29/11/2025\n📍 Aulas asignadas\n⏳ Faltan 18 días\n\n🎓 *Inscripciones Semestre Primavera 2026*\n📝 Periodo de inscripción para el semestre de primavera\n📅 Del 01/12/2025 al 15/12/2025\n📍 En línea y control escolar\n⏳ Faltan 24 días\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:22:37.452774",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "97b458d0-ab3b-4a28-9434-928002ca35ae",
+    "telefono": "test123",
+    "contenido": "carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:22:47.372922",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ee2a6dcf-aacc-48a2-a9d4-44db4da18298",
+    "telefono": "test123",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingeniería en sistemas computacionales\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:22:47.388926",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c48650b3-3d45-4bce-9dd9-e6ad11a33b8f",
+    "telefono": "test123",
+    "contenido": "Ingenieria en sistemas computacionales",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:23:11.715382",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "347dd851-ec56-49b8-8ffe-b4064026af4d",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:23:11.730871",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1ddc12df-c53a-41cb-9009-e34e1d4c575c",
+    "telefono": "test123",
+    "contenido": "carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:23:39.482844",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5e18cfd8-d755-4787-9804-091ab912f727",
+    "telefono": "test123",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingeniería en sistemas computacionales\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:23:39.500218",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "aa02a3c1-f674-459c-b09e-c007aa149ca5",
+    "telefono": "test123",
+    "contenido": "la primera",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:23:47.071254",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ef741663-c0df-48b5-be80-671a4b619ca2",
+    "telefono": "test123",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:23:47.086310",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3d3588b3-837e-4829-ba58-1ba34c258b11",
+    "telefono": "test123",
+    "contenido": "hasta luego",
+    "es_bot": false,
+    "timestamp": "2025-11-06T14:24:42.902657",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5bff7601-0fcf-48fa-afc3-5e04a98cd845",
+    "telefono": "test123",
+    "contenido": "¡Hasta pronto! 👋 Estoy aquí cuando me necesites.",
+    "es_bot": true,
+    "timestamp": "2025-11-06T14:24:42.922466",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dff6e3ce-9391-4d89-8cc9-3a85b6a510b5",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:46:03.750745",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8fc6135f-21fa-41c5-867e-6657c4948a90",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:46:03.774619",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e05c1527-3ac7-4a21-b375-e872b3a289d0",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:46:33.432476",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4604a61c-4b1e-4960-8a7f-1f784d30c9db",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:46:33.463769",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4f7c3465-52db-49ab-a0c5-cdaa314e8d5f",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:46:33.526602",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "adac63c1-3d3d-480f-a35d-88f87458d091",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:46:33.549196",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "62bd0691-c010-43e2-ba3a-2693ba3e28b9",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:46:33.600019",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "27dae927-cf53-40ae-a4af-856f142fd864",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:46:33.625587",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d5a70a4d-0a3a-4068-a5b8-b8ff016b3fb1",
+    "telefono": "5551234567",
+    "contenido": "horario de biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:47:35.005506",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "844f836b-d66c-4298-85f4-ed3ecf1f6ea2",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:47:35.032399",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9deffc3c-2ba5-448a-bcda-ea9a20331436",
+    "telefono": "5551234567",
+    "contenido": "horario de biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:47:35.084561",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dc82df18-2437-46c5-af08-228d752d7e25",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:47:35.108599",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7ad9a7c1-e460-4670-ae16-f8b48c8b37d1",
+    "telefono": "5551234567",
+    "contenido": "horario de biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:47:35.158777",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "56445a07-9dd4-42a6-bd20-83841a242413",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:47:35.180877",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "71c50626-1bc4-4746-bb2d-5d20913f0b93",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:50:20.716893",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b02b7645-7656-4c40-9be0-b1fb9be58512",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:50:20.737168",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1b79b0be-98fb-4b02-ab1a-ebaa4e0af815",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:50:20.781084",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8b545f79-ff0e-4b98-94a6-2c3129b6d0ea",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:50:20.801062",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2eb1cbf0-e4eb-4d2e-8f62-97532bb8eafa",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:50:20.845972",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0b02daba-eccc-43d2-aa6a-d92b8b30a6cd",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:50:20.867021",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "56ddbf27-4c19-4731-ad45-18788b17b115",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:51:54.402606",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c3cbc747-3039-4c18-9bf6-118979f17006",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:51:54.425127",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c5b4809f-c6f2-4e71-af77-d9e00b222aa2",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:51:54.470935",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e55f79b0-ee84-4444-ae87-07b8d033f7a4",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:51:54.492362",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "68f8ab7e-d41b-48c9-b6d1-e62c6ca0212b",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:51:54.536998",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7f5f2036-830b-4f7f-99cb-f103d9e07db1",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:51:54.558830",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b1baf172-ff9e-4323-a9ac-1f0c3cf3e3b9",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:53:39.251130",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "61304438-2881-416c-82fc-96de55866d9d",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:53:39.271802",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2e86cd9b-b191-4cd1-9d37-7d74bd37629d",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:53:39.317689",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5b172403-2303-48d2-8144-2dd38ad1936c",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:53:39.342383",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "302ac4c9-59a7-4b5c-8f06-f2598d56d149",
+    "telefono": "5551234567",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:53:39.400804",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b21427d6-8101-4f32-a547-90b47c74bb29",
+    "telefono": "5551234567",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:53:39.424938",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "333eaacc-d039-4203-add9-aa2b72981329",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:54:59.478261",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "67b3ddd7-f7fd-49a6-bc4f-34d698a3eebd",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:54:59.500877",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a3d71b8f-9511-4e3e-b5cf-2688cf4f0d1c",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:54:59.549121",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d1e333f8-3200-488a-b0e4-26892ee9baf3",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:54:59.571871",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "486350d7-492f-4fa8-8d0f-41ee2fecaf0a",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:54:59.623973",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8d271530-c46c-4c00-b546-6fea4f28a796",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:54:59.651367",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2e698db8-290d-41c7-b969-239955ace118",
+    "telefono": "5551234567",
+    "contenido": "cuando examenes",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:55:35.276075",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "94902ae4-625a-4666-8f50-6d0c179ecd61",
+    "telefono": "5551234567",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:55:35.297345",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "569e01b0-15a0-4147-b482-1fdbbe867420",
+    "telefono": "5551234567",
+    "contenido": "cuando examenes",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:55:35.345180",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6597279e-42a5-4c06-bc84-aa56b6e00d52",
+    "telefono": "5551234567",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:55:35.367009",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "cc61bece-2f27-4e33-b1f2-dc26fef3a98e",
+    "telefono": "5551234567",
+    "contenido": "cuando examenes",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:55:35.413725",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dfd329cc-dbb4-4182-9554-3b46d5b80c8d",
+    "telefono": "5551234567",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:55:35.435706",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fa636522-1f16-479a-94c5-32f091efc2fa",
+    "telefono": "5551234567",
+    "contenido": "ingenieria sistemas",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:58:24.872638",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "135e9695-5966-4350-a9a6-a4ea0d407b95",
+    "telefono": "5551234567",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:58:24.895356",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2ca15e61-8881-4f9e-b984-deada6fe1941",
+    "telefono": "5551234567",
+    "contenido": "ingenieria sistemas",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:58:24.941337",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5077d418-8452-4678-b6a1-3a6a31d74ded",
+    "telefono": "5551234567",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:58:24.964258",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b104782c-fbef-40d3-92b5-d0bfd6609bc4",
+    "telefono": "5551234567",
+    "contenido": "ingenieria sistemas",
+    "es_bot": false,
+    "timestamp": "2025-11-07T13:58:25.015870",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9c780b49-4a51-4cee-9db5-f26332b521ab",
+    "telefono": "5551234567",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-07T13:58:25.040309",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f1e63720-3174-4482-bebd-15ac7ce691d0",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T14:24:12.708999",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b1d5d8fe-da4f-4ce4-8bcd-6d618dfd5366",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T14:24:12.718414",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a7e36a16-57b2-4ccb-afea-942fe5c617fd",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T14:24:12.737797",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7a92cb8d-b9f5-484b-a72f-2ad5e32df7e3",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T14:24:12.746955",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "61863a38-0e42-424a-a216-8d404f365035",
+    "telefono": "5551234567",
+    "contenido": "horario biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-07T14:24:12.766405",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4fd79b8f-c9fa-4217-bb29-ac8cb3da1b2d",
+    "telefono": "5551234567",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-07T14:24:12.775154",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a03cc436-c6f7-494d-b1cc-d65e250cdcc9",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-09T14:13:18.575898",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e387d575-c555-4705-bcb4-a6f9f9acf2b2",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T14:13:18.587150",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3cf6bf0f-3027-439f-87cf-06b009443bf0",
+    "telefono": "+5216651430146",
+    "contenido": "Horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-09T14:15:29.303690",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ee0b4c8-c280-44dc-aeb7-0e583f78eb0c",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no tengo información de horarios disponible. 😔",
+    "es_bot": true,
+    "timestamp": "2025-11-09T14:15:29.315594",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b0766d6f-1d90-4998-8657-a12ad25ea381",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-09T14:18:07.519794",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "cc47690e-2191-4170-87c3-dddee4a2994e",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T14:18:07.538758",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9f97e864-5a11-41b0-8207-d7ed82903299",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-09T14:18:20.868153",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ce07c493-7275-4bd1-a21e-66a23ffea2cb",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T14:18:20.877426",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4a8bb2f9-f0f8-4447-8c25-e2a9d1794b81",
+    "telefono": "+5216651430146",
+    "contenido": "Horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-09T14:18:27.604285",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "494ea258-ac88-447f-935c-9f66b4367bc0",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no tengo información de horarios disponible. 😔",
+    "es_bot": true,
+    "timestamp": "2025-11-09T14:18:27.614176",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "63b711f3-8774-4246-a474-17a2a7e42b3c",
+    "telefono": "test",
+    "contenido": "mensaje de prueba",
+    "es_bot": false,
+    "timestamp": "2025-11-09T15:06:20.615782",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d9e33dcf-bb6d-4e8c-835d-3a94e5052d2e",
+    "telefono": "test",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T15:06:20.629580",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1edb7462-e58a-4fe2-8506-070b7f3fc4bd",
+    "telefono": "test",
+    "contenido": "mensaje de prueba",
+    "es_bot": false,
+    "timestamp": "2025-11-09T15:06:20.655172",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7ccd655e-9c2e-448d-a870-ae6545c0eaf8",
+    "telefono": "test",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T15:06:20.667280",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "053c3e08-f115-45db-8ffb-957f0f98ce6a",
+    "telefono": "test",
+    "contenido": "mensaje de prueba",
+    "es_bot": false,
+    "timestamp": "2025-11-09T15:06:20.692041",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2ffd1d0a-6989-42c6-86ac-7fc1a4906459",
+    "telefono": "test",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T15:06:20.705249",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6c87341b-5854-4ce4-98f0-1d33aa9b0a9e",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:17:58.197063",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "48e4761b-ac3d-471c-a63e-c9e3a59e819f",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:17:58.210222",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7d256f68-21d1-4ec7-8b4c-2c33282097ce",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:17:58.242175",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7456b63a-be88-4777-a825-14da27a7091a",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:17:58.257595",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8429afe8-16c5-44ff-8d45-0c1a65f3e678",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:17:58.289308",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f095d430-1c36-4a6b-ab2b-b9a4aab932ea",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:17:58.306245",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0cd1fb34-2c0d-4368-8a00-905474a70ab1",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:22:39.609755",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ec32d5f-b214-4c73-ac38-98d70a29781a",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:22:39.627272",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "efc91c2d-ab05-4d7f-b1a3-bb3266bb1d82",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:22:39.662130",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "24fa9add-c0ab-4a9f-8e60-212840668c7f",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:22:39.677265",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c5c4fb99-5946-4d86-b1d2-39db7be7d25c",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:22:39.706076",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "182001d4-1a08-4430-9aa5-0d6d81b92241",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:22:39.724113",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c785ab78-19cd-4322-b4f6-d754c4e24ef1",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:24:46.002351",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f4f0cd10-63aa-4ab0-a579-1424f3744de6",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:24:46.012425",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "228c8305-39db-41d9-b796-750f1ba83060",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:24:46.040893",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "98146971-0e19-42ec-8aba-089b0fa191d3",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:24:46.055594",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e3f59d40-cca1-4c4f-b613-1780e1d9b9a7",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:24:46.083562",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c7007403-e5a0-4f43-9bba-013c6b8c02be",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:24:46.095243",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7444253d-baec-480f-b683-70bf0122d502",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:32:32.335459",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f5e10891-a68c-4a90-b870-77bf548f9111",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:32:32.352609",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "02ef2259-c175-47e2-ba8d-012130e6ffc6",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:32:32.383803",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "247f2c7e-3d33-4a7a-8ed3-660c52738591",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:32:32.396933",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "012b9f0c-740c-42b4-9755-5b86853e2224",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:32:32.425143",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d226114f-7373-4d71-82b1-42b7757945e6",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:32:32.437785",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7053e9d5-a2af-4bb2-b8fe-02a207776fa0",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:33:30.065690",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b98334a7-dffd-49fe-8156-cc8cdd651c04",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:33:30.073220",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ca2cab3-024e-4bdb-a8db-580e710bd7af",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:33:30.090786",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9ddbc9aa-6fac-4c21-8945-26761dc6faf4",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:33:30.099791",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "549049b4-87f5-4524-8603-a6e38b8e34c1",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:33:30.118774",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0ea365c8-0565-49cf-982e-968fc5431590",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:33:30.128132",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2c1505e2-62df-473b-bae7-ac5b8d7def27",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:34:02.448677",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "332decec-aed0-4f33-898e-a2339b164d23",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:34:02.461932",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "05a609c9-4063-4c92-ae21-23afa8a90864",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:34:02.489313",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "563f7a52-619f-4cd9-a016-c3ea1c33c637",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:34:02.502842",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e9924e49-76d8-4204-b5b4-388d54ce16b6",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:34:02.526094",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2e6d9333-01cc-430b-a98e-4797d7f92e2f",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:34:02.537985",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6d59f5c6-ec7b-4f6e-aed5-e7af9fdf1ca9",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:13.361926",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "18cdd30c-e0a8-48dc-9f9e-4581eb7ed78a",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:13.373882",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "86faf972-5b8f-48d1-99e7-0bbdb85ec655",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:13.403891",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8934f0e7-c90b-4c68-b3c0-4ddba96fe34c",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:13.421586",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7a942722-6019-436e-98cf-302fca3e2f19",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:13.456714",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "32782309-7607-4a53-b407-4162609a5ec5",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:13.474322",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6192e6b0-b934-4727-99a4-0bf41a38716f",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:23.414218",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7eaf3000-d8c1-4ab7-b35a-f51ff5e9442c",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:23.427769",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fb29a9fd-b2e3-46b4-b467-7e3f04bce51d",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:23.461698",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b5fedfb3-006f-4121-9319-d94d4d92c5f8",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:23.483259",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6738d2ac-1a55-4c1a-977f-df25b0ff558b",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:23.514640",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b57fbc88-aee9-43d6-9085-aa5d754b156f",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:23.530063",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "545a9251-1446-43cb-a50e-6a372e787f87",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:34.013999",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6ee23748-5379-4d68-8e36-94ec0b7bc201",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:34.027793",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f98946fd-19cd-4f5e-b43a-83c5b5b320a8",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:34.054551",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "faf72e42-a1bb-4b78-8402-77f52a028b4f",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:34.070364",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "489a46c3-5ddc-4aa9-9e4d-f491a4d61019",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:34.106170",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "39281b5d-5696-424e-8160-12e51c76451a",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:34.123710",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f1d1e601-8fa7-4ec1-bdb1-3bf430d1841b",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:59.488557",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2816b969-86d2-46ac-8e89-21e9c1cbdf62",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:59.503304",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "32bd624d-f9a4-4848-b147-179841f30cff",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:59.535602",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fb5a93aa-86c0-4c16-9495-e71935bc8830",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:59.553561",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6e89511c-d85b-4fc2-9337-3b0f29ce8461",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:37:59.583098",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "228edc4a-1f16-4fb3-b27d-26e37aa68fc5",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:37:59.596447",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a0ee1224-e660-4983-afe6-188d9fa09446",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:40:47.641645",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c90900c5-cc93-42d0-be08-a8aeca8d0c10",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:40:47.652767",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4b172b59-63ce-4f26-991e-0eabe05c3ecc",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:40:47.675034",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "84b8b6a4-46c5-4cb1-93da-31139d7989fa",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:40:47.687061",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f8338e62-0b0f-4813-b12d-008db2b873af",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:40:47.708687",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6843f4b4-1ad3-4ffb-ab06-076c81f079b5",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:40:47.720375",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fc2216ea-fbd1-473e-96ea-842df905bcfc",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:41:12.267352",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e553f400-ca05-434f-b843-4ae1f7cb19e2",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:41:12.277307",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ac1c2759-6bab-46cc-9566-012a8c6951b6",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:41:12.295528",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8ff87dd6-e85d-4e73-8566-24c48a63ae5b",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:41:12.305360",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "66427c5d-4211-4e74-acc1-1839649565e9",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:41:12.324343",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a67bd3f1-e216-40a8-a8be-62e9731b1c68",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:41:12.333827",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "29966bf5-47da-4331-b99f-bcb81d0b220c",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:46:49.420710",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "844b0c86-4ab4-4991-9341-e9c4f540c918",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:46:49.438955",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d129a850-794d-432c-a25b-1bbefb82db00",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:46:49.473127",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e72ebe8f-dd33-4fa4-8dcb-09352d24fb92",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:46:49.490426",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fa09baeb-7b0c-47ee-88d8-4a33ffbcd04c",
+    "telefono": "",
+    "contenido": "",
+    "es_bot": false,
+    "timestamp": "2025-11-09T23:46:49.522105",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1ead33de-b6c9-48fc-aa3f-69f7cdbef91d",
+    "telefono": "",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-09T23:46:49.535677",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9a0ef58d-ab01-4ea1-a156-48463cdc018f",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-10T00:24:20.244848",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1ea2fb11-ab4d-45ba-8ddb-dd625b1eef1f",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas noches! 🌙\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T00:24:20.258018",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d3fa4a62-c50f-4768-8e1a-69f31b4b0664",
+    "telefono": "+5216651430146",
+    "contenido": "Horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-10T00:25:06.888633",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d7abe41a-b0f2-42cf-8c73-693c8e62d5ec",
+    "telefono": "+5216651430146",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-10T00:25:06.899547",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6a257769-98f6-41e4-8203-a6f9adb21689",
+    "telefono": "+5216651310865",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-10T00:30:40.321043",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8a0afc13-0878-4ff5-9055-f5c30ccb509c",
+    "telefono": "+5216651310865",
+    "contenido": "¡Buenas noches! 🌙\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T00:30:40.331230",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "81962c1c-7b18-42d9-ac16-5254aa75e477",
+    "telefono": "+5216651310865",
+    "contenido": "Horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-10T00:30:42.362796",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4372cfc1-0972-4188-b563-acb905d5ee1c",
+    "telefono": "+5216651310865",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-10T00:30:42.381720",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5fb54694-1cf4-460d-a5d0-5d479dc227e4",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:46:09.696502",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "08d25272-f248-4714-9cba-f12c80be2899",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:46:09.721893",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ff93cca-b71d-4b06-83e1-8c488167ae65",
+    "telefono": "+5216651430146",
+    "contenido": "Horarios",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:46:22.416586",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7a8bf87e-ba4b-4774-af6b-c2b4e351d4a8",
+    "telefono": "+5216651430146",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:46:22.428482",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "79f38bd4-c899-4148-a5ac-3cdfdeac50e3",
+    "telefono": "+5216651430146",
+    "contenido": "Eventos",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:46:27.721738",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0bca9db6-4543-4d10-9bba-0285f567463f",
+    "telefono": "+5216651430146",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:46:27.741639",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ea1ba3b9-b63e-490a-9ddd-3cdba36d3e3b",
+    "telefono": "+5216651430146",
+    "contenido": "Carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:46:43.449950",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "554614c6-93a0-4f1a-b843-2d3791b06450",
+    "telefono": "+5216651430146",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:46:43.462600",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "beeee1ea-4a4d-49b7-81c4-007ee9dbbc9b",
+    "telefono": "+5216651430146",
+    "contenido": "Ingeniería mecatrónica",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:46:57.689953",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "be5e14ed-7e65-466b-b0ff-45839200f6b7",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:46:57.708762",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5efbba14-a48f-4738-aec3-90f83a8b440a",
+    "telefono": "+5216651430146",
+    "contenido": "Trámites",
+    "es_bot": false,
+    "timestamp": "2025-11-10T13:47:09.050129",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ffbd1f2-4de5-4b60-90f2-549f392a8586",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T13:47:09.075512",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d3677a59-89af-47e7-84f5-ce72c0dc1402",
+    "telefono": "+5216651048239",
+    "contenido": "hola",
+    "es_bot": false,
+    "timestamp": "2025-11-10T15:00:33.493563",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "88d3cc93-34a9-46dd-aacb-967b5b9f11bb",
+    "telefono": "+5216651048239",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T15:00:33.512968",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "36c0073b-0376-427b-a7f6-ef30a3fa74cf",
+    "telefono": "+5216651048239",
+    "contenido": "dame el horario",
+    "es_bot": false,
+    "timestamp": "2025-11-10T15:01:29.167350",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a1c8f079-2c7c-4312-8f7b-bdcecbc80d8d",
+    "telefono": "+5216651048239",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-10T15:01:29.180527",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "71aef137-63fe-4773-8b71-b0c8bf80bb99",
+    "telefono": "+5216651048239",
+    "contenido": "dime los eventos",
+    "es_bot": false,
+    "timestamp": "2025-11-10T15:01:49.399498",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7af33e03-74b7-470b-a5f5-46927ccd27b8",
+    "telefono": "+5216651048239",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-10T15:01:49.410932",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4216bbc0-05f3-4beb-8c40-4949bd24e073",
+    "telefono": "+5216651048239",
+    "contenido": "que información hay de las carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-10T15:02:04.772176",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7c659629-467f-4bb8-b20a-ea3de26be2b8",
+    "telefono": "+5216651048239",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T15:02:04.781603",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "098000ae-2a82-4dc7-b280-3d15edb54d64",
+    "telefono": "+5216651048239",
+    "contenido": "qué trámites administrativos hay?",
+    "es_bot": false,
+    "timestamp": "2025-11-10T15:02:29.369768",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "25a4ab4f-1d84-493f-bd3d-cc205f3b90d8",
+    "telefono": "+5216651048239",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T15:02:29.385201",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "270fa40b-feab-4bf2-84aa-0751ebee2d4c",
+    "telefono": "+5216651430146",
+    "contenido": "Puto",
+    "es_bot": false,
+    "timestamp": "2025-11-10T16:03:30.768982",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6cfdecd3-1d27-4988-877d-41cf835c1645",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T16:03:30.780325",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1bfcfe55-8144-4668-8d76-3b945c30e4de",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-10T16:03:32.055791",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dfc9ea9f-477d-4be6-bc8c-367cf67b1b89",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T16:03:32.070525",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "32b24042-4cb2-4f59-a864-2bf0efee22f1",
+    "telefono": "+5216651430146",
+    "contenido": "Va a haber clases?",
+    "es_bot": false,
+    "timestamp": "2025-11-10T16:04:03.474334",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a5e14ec3-3024-4df5-b88b-fa56fb1dfe84",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-10T16:04:03.483489",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8083e18b-0a3b-49ba-8c81-5c8f28367537",
+    "telefono": "+5216651430146",
+    "contenido": "Eventos",
+    "es_bot": false,
+    "timestamp": "2025-11-10T16:04:24.828724",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "62d189ed-0d6c-4ae0-98aa-0ea19987adde",
+    "telefono": "+5216651430146",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-10T16:04:24.845862",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3d769e2b-bdac-4618-b33a-5e2d8fe28c7b",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-13T13:58:17.812604",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f824a5b5-fdaa-4491-99d4-af55305c93f2",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T13:58:17.840047",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "209d5f2e-b49a-4539-8ee8-87fdd7bf2bb4",
+    "telefono": "+5216651430146",
+    "contenido": "Me puedes proporcionar el horario de biblioteca",
+    "es_bot": false,
+    "timestamp": "2025-11-13T13:59:30.575632",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "682fc4bb-6aa9-435e-9525-8528a78a86e2",
+    "telefono": "+5216651430146",
+    "contenido": "📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T13:59:30.588262",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b526dbfc-44c9-4744-811e-c66626f64d4d",
+    "telefono": "+5216651430146",
+    "contenido": "me puedes dar el horario del comedor",
+    "es_bot": false,
+    "timestamp": "2025-11-13T14:00:05.370768",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ea01a3c3-6327-4705-a414-e3ebda16bc95",
+    "telefono": "+5216651430146",
+    "contenido": "📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T14:00:05.382716",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bb11bfb9-1c7b-4c8a-b1e6-cd0a75174e77",
+    "telefono": "+5216651430146",
+    "contenido": "que horarios tienes?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T14:00:19.744989",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a044cdca-caa8-4587-96ea-342f63949909",
+    "telefono": "+5216651430146",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T14:00:19.754143",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9f31d45f-719e-4de8-bcab-761df60caf3b",
+    "telefono": "+5216651430146",
+    "contenido": "hay algún evento esta semana?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T14:00:36.417058",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d09cf828-3c39-492d-9fbb-09b6af46b82c",
+    "telefono": "+5216651430146",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-13T14:00:36.427549",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8b7ed69b-0aab-474f-b685-d9cabb0dcafd",
+    "telefono": "+5216643568615",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:22:20.362965",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "dcd512a7-0746-4141-9ac9-0c92ca6f589a",
+    "telefono": "+5216643568615",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:22:20.384888",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c55df425-e7a8-4fc6-a0a1-ed4540cd85fb",
+    "telefono": "+5216643568615",
+    "contenido": "Qué horarios tienes?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:22:53.671508",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7e75117b-e126-4b43-99aa-73edffffb288",
+    "telefono": "+5216643568615",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:22:53.688486",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "77809c03-af77-4ee5-9549-9f3f7382a1fe",
+    "telefono": "+5216643568615",
+    "contenido": "Cuál es tu función?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:23:11.648837",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4d80e6b8-9afa-4d3b-8e2d-3ba2740565f3",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:23:11.672326",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b098dbf7-9521-4fed-b617-f7307ce2c8ed",
+    "telefono": "+5216643568615",
+    "contenido": "Hay algún evento esta semana?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:23:26.172675",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "40235879-fdcb-460b-ac8e-3f8c257d7456",
+    "telefono": "+5216643568615",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:23:26.186844",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "18dcde13-688e-4774-90a2-979ee3a93411",
+    "telefono": "+5216643568615",
+    "contenido": "Me puedas dar información de la carrera de Ingenieria en Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:24:30.238681",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "1cbcfa9d-f98e-497b-87bc-76ae7ef3ed1b",
+    "telefono": "+5216643568615",
+    "contenido": "No encontré información sobre la carrera 'mecanica'. 😔\n\nCarreras disponibles:\n• Ingenieria mecatronica\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:24:30.254894",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fce95748-55b6-4204-9562-0f4d2e1298e6",
+    "telefono": "+5216643568615",
+    "contenido": "Me puedes dar información de esa carrera?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:25:01.167947",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e4dcf6b8-5df5-4809-b8e0-aabceda3869e",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:25:01.180580",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7d60ad75-6861-4326-ba26-761f2f8bba50",
+    "telefono": "+5216643568615",
+    "contenido": "Plan de estudios",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:25:13.009900",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "af08bfb5-3bb9-49a7-914c-b84d49a806cc",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:25:13.023615",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "194d5099-01b8-4074-9477-4e5496f88dee",
+    "telefono": "+5216643568615",
+    "contenido": "Materias",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:25:26.001521",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "82e24af0-3834-40a5-9d4e-8bd50b9b1084",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:25:26.014407",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f78918e4-8f5c-40e5-8103-470d86cc3260",
+    "telefono": "+5216643568615",
+    "contenido": "Ingenieria mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:25:50.960226",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "9b0013ba-f5b2-4ae6-bd01-7283aca4efc7",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:25:50.971468",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "efd03a87-bacf-4187-aeb9-d5e467cd83b5",
+    "telefono": "+5216643568615",
+    "contenido": "mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:29:26.033118",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5a7082a8-8b5f-4a29-9d21-f9ebf03a3418",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:29:26.051378",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f6d45292-9f07-459f-bd22-eb6ad965271e",
+    "telefono": "+5216643568615",
+    "contenido": "ingenieria",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:29:33.338640",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a5d2594a-ff88-406f-b62a-5deb31317022",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:29:33.352157",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "26a8821f-3dd4-49d3-b7d2-e27c874d183a",
+    "telefono": "+5216643568615",
+    "contenido": "que carreras tienes disponibles",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:29:49.051544",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "40eb02eb-5508-42ef-9ad1-fdc5c12494df",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:29:49.069656",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "525c1f32-03f9-456b-86cc-ca047e7dfd05",
+    "telefono": "+5216643568615",
+    "contenido": "la primera",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:30:01.825322",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "911f45b3-809d-4667-88c5-77bedec53630",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:30:01.840187",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8ce606c0-0b87-457f-9f1f-0e2f467a4797",
+    "telefono": "+5216643568615",
+    "contenido": "que carreras tienes disponible",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:30:23.651471",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7dbb154d-a222-4233-810d-2b0151b81d3b",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:30:23.662829",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "50937aac-8255-4397-862c-4696659b9bf1",
+    "telefono": "+5216643568615",
+    "contenido": "Ingenieria mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:30:42.102707",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a911c0a9-850f-415b-80d9-e81ef6773bf5",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:30:42.113988",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "02104f32-fae6-4891-9187-98c561aec726",
+    "telefono": "+5216643568615",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:37:59.696686",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "f66c1795-7b7f-4cae-b243-5e0cca0f3ac0",
+    "telefono": "+5216643568615",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:37:59.719268",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "4eaf1403-31e2-41a4-87b8-e097aac7841b",
+    "telefono": "+5216643568615",
+    "contenido": "Me puedes dar el horario del comedor?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:39:49.283595",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "84326dd9-188d-46d0-bfc1-53a6afecfcc0",
+    "telefono": "+5216643568615",
+    "contenido": "📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:39:49.303704",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "248cbb81-25f7-4c9e-b28c-70c3a8da0759",
+    "telefono": "+5216643568615",
+    "contenido": "Qué horarios tienes?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:40:05.596044",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e0f2d6c0-efbe-46c2-b4db-c8e554580c94",
+    "telefono": "+5216643568615",
+    "contenido": "📅 *HORARIOS DE SERVICIOS*\n\n📅 *Biblioteca*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Sábados de 9:00 a 14:00\n\n📅 *Laboratorios*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Requiere reservación previa\n\n📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:40:05.618798",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "315aa29d-9ab7-470c-b9af-cbcd9c83f962",
+    "telefono": "+5216643568615",
+    "contenido": "Cuáles son los horarios del comedor?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:40:38.903070",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "668455c9-8cad-4d61-9332-d44b428e157b",
+    "telefono": "+5216643568615",
+    "contenido": "📅 *Comedor*\n🕐 Lunes, Martes, Miércoles, Jueves, Viernes\n⏰ 08:00 - 20:00\nℹ️ Desayuno 7:30-10:00, Comida 13:00-16:00\n",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:40:38.922276",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7fe0202b-3235-461a-ab36-eb27a339caf3",
+    "telefono": "+5216643568615",
+    "contenido": "Hay algún evento esta semana?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:40:55.147688",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "829e81cd-283c-4037-8069-b3716e18c93e",
+    "telefono": "+5216643568615",
+    "contenido": "No hay eventos próximos registrados en este momento. 📅",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:40:55.172875",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bc748de2-c051-4a33-8cb8-30674523f242",
+    "telefono": "+5216643568615",
+    "contenido": "carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:55:29.706202",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ce4b5ee7-5c16-415f-a783-d180661eeebe",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:55:29.725608",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "ab86c47b-f026-40a0-b2f1-e9e4cc9f5f67",
+    "telefono": "+5216643568615",
+    "contenido": "Me podrias dar informacion de Ingenieria mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:56:00.281399",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "adc62f26-a574-49ce-973d-c423d1919ff5",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:56:00.291513",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a1c91343-98bf-4e8b-acaa-0340b4c0f09c",
+    "telefono": "+5216643568615",
+    "contenido": "Ingenieria Mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T15:58:01.412383",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "80f39319-1d41-4327-8847-ef9e85abe2cb",
+    "telefono": "+5216643568615",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T15:58:01.429070",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8e9e9583-a062-4bc3-b7a4-4ff4af1adda3",
+    "telefono": "+5216651430146",
+    "contenido": "carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:10:17.156401",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5c1fb3e6-2366-493c-a9d6-019352cf24b9",
+    "telefono": "+5216651430146",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:10:17.176018",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "bdcaf9f2-8c23-45cd-8229-b98835d8dea9",
+    "telefono": "+5216651430146",
+    "contenido": "me puedes dar información sobre ingeniería mecatrónica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:10:42.635740",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3348604b-cd9f-431c-8d0e-a27077896ee4",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:10:42.652372",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "8d1ad1cc-64c7-4a25-ac46-5ca62d0073f0",
+    "telefono": "+5216651430146",
+    "contenido": "ingenieria mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:11:01.463668",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "41f2ef93-9c8c-441f-a460-f85645b22e71",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:11:01.483933",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "a7a0cd22-3881-4f04-80ef-4eeccb52fa6f",
+    "telefono": "+5216651430146",
+    "contenido": "Ingenieria Mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:11:17.669556",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "0b1d0fe6-00d4-4dbd-acc5-9f69990df55f",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:11:17.684796",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "63fdfd63-376c-43b4-83f5-438b636b3987",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:13:32.659123",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3ca6fd75-81a1-40e8-b8ea-26d3435164bf",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:13:32.673855",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5de13af0-1704-4060-ad57-c7e90d259cb4",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:16:24.045437",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "d5f86128-faaf-4cb5-bd1e-b4277297eb1e",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:16:24.070621",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "740d6d62-2022-49b2-a665-e8fa588e04af",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:20:01.686933",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "aa850fe1-9c1d-42af-8900-74d936a983a8",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:20:01.709114",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6c554570-51bf-4cd0-87e3-8e642c399c27",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:26:36.800451",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "3dfe9aef-763d-4528-902d-b88bcee2f1f3",
+    "telefono": "+5216651430146",
+    "contenido": "🎓 *INGENIERIA MECATRONICA*\n==================================================\n\n⏱️ *DURACIÓN:*\n8 semestres\n\n👤 *COORDINADOR:*\nResendiz\n\n==================================================\n¿Necesitas más información? 😊",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:26:36.827486",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "b47d8135-9c42-4129-986c-fed329f153c3",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:29:36.727192",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "fe0dac0f-7d74-4c25-9511-13a72191bf22",
+    "telefono": "+5216651430146",
+    "contenido": "🎓 *INGENIERIA MECATRONICA*\n==================================================\n\n📚 *DESCRIPCIÓN:*\nFormamos profesionales capaces de diseñar desarrollar e implementar soluciones tecnológicas innovadoras\n\n⏱️ *DURACIÓN:*\n8 semestres\n\n👤 *COORDINADOR:*\nResendiz\n\n==================================================\n¿Necesitas más información? 😊",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:29:36.749367",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "c383a14d-7d06-47c5-8a17-fe7a10d87563",
+    "telefono": "+5216643568615",
+    "contenido": "hola?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:34:51.454474",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "6b3596c1-251c-4c8c-a3fb-f976c281e5af",
+    "telefono": "+5216643568615",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:34:51.466355",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "5ec2083b-83dd-499d-9e51-3514b073f23b",
+    "telefono": "+5216643568615",
+    "contenido": "Información sobre carreras",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:35:15.106519",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "7d7099cb-ebae-48c9-b0f7-0706e71c6bb1",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *CARRERAS DISPONIBLES*\n\n• Ingenieria mecatronica\n\n¿Sobre cuál te gustaría saber más?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:35:15.118541",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "56671227-b871-4dfa-9ff3-fc2dc33f22c6",
+    "telefono": "+5216643568615",
+    "contenido": "Sobre ingenieria mecatronica",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:35:50.129247",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2cc09669-8b68-4d5d-9b41-8f1bdf47fb1c",
+    "telefono": "+5216643568615",
+    "contenido": "🎓 *INGENIERIA MECATRONICA*\n==================================================\n\n📚 *DESCRIPCIÓN:*\nFormamos profesionales capaces de diseñar desarrollar e implementar soluciones tecnológicas innovadoras\n\n⏱️ *DURACIÓN:*\n8 semestres\n\n👤 *COORDINADOR:*\nResendiz\n\n==================================================\n¿Necesitas más información? 😊",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:35:50.141074",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "eecea60c-a39f-4fb0-b69e-bb9fb63315d4",
+    "telefono": "+5216651430146",
+    "contenido": "Hola",
+    "es_bot": false,
+    "timestamp": "2025-11-20T13:11:32.771401",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "e3a3c7ee-2ab8-4d9a-a51e-f91d580c5170",
+    "telefono": "+5216651430146",
+    "contenido": "¡Buenas tardes! ☀️\n\nSoy tu asistente virtual universitario. 🎓\n\nPuedo ayudarte con:\n📚 Horarios de biblioteca, laboratorios y comedor\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿En qué puedo ayudarte hoy?",
+    "es_bot": true,
+    "timestamp": "2025-11-20T13:11:32.802459",
+    "tipo": null,
+    "procesado": false
+  }
+]

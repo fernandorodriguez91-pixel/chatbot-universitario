@@ -1,0 +1,20 @@
+[
+  {
+    "id": "417f757d-aef8-4e2f-b65c-db37e282c299",
+    "telefono": "+5216651430146",
+    "contenido": "¿Qué información hay de Ingeniería Mecatrónica?",
+    "es_bot": false,
+    "timestamp": "2025-11-13T16:18:23.634891",
+    "tipo": null,
+    "procesado": false
+  },
+  {
+    "id": "2f8980d6-4f1c-4970-b51f-0d5d4ae8ea64",
+    "telefono": "+5216651430146",
+    "contenido": "Lo siento, no entendí tu pregunta. 🤔\n\nPuedo ayudarte con:\n📚 Horarios (biblioteca, laboratorios, comedor)\n🎉 Eventos del ciclo escolar\n🎓 Información sobre carreras\n📋 Trámites administrativos\n\n¿Podrías reformular tu pregunta?",
+    "es_bot": true,
+    "timestamp": "2025-11-13T16:18:23.635856",
+    "tipo": null,
+    "procesado": false
+  }
+]
