@@ -43,6 +43,14 @@ base_datos = BaseDatos()
 base_conocimiento = BaseConocimiento()
 gestor_respuestas = GestorRespuestas(base_conocimiento)
 
+import os
+
+print(f"🔍 DEBUG: Buscando credentials.json...")
+print(f"   Ruta esperada: api/credentials.json")
+print(f"   Existe: {os.path.exists('api/credentials.json')}")
+print(f"   Directorio actual: {os.getcwd()}")
+print(f"   Archivos en api/: {os.listdir('api/') if os.path.exists('api/') else 'CARPETA NO EXISTE'}")
+
 import json
 import os
 
