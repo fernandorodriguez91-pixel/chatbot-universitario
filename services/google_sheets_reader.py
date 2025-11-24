@@ -5,13 +5,7 @@ import os
 
 class GoogleSheetsReader:
     def __init__(self, credentials_file, sheet_id):
-        """
-        Inicializa el lector de Google Sheets
-        
-        Args:
-            credentials_file: Ruta al archivo credentials.json
-            sheet_id: ID del Google Sheet
-        """
+
         self.SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
         self.credentials_file = credentials_file
         self.sheet_id = sheet_id
@@ -19,12 +13,18 @@ class GoogleSheetsReader:
         self._authenticate()
     
     def _authenticate(self):
-        """Autentica con Google Sheets API"""
         try:
-            credentials = Credentials.from_service_account_file(
-                self.credentials_file, 
+            import json
+
+# Leer el archivo ignorando BOM
+            with open(self.credentials_file, 'r', encoding='utf-8-sig') as f:
+                service_account_info = json.load(f)
+
+            credentials = Credentials.from_service_account_info(
+                service_account_info,
                 scopes=self.SCOPES
             )
+
             self.service = build('sheets', 'v4', credentials=credentials)
             print("✅ Autenticación con Google Sheets exitosa")
         except Exception as e:
@@ -32,16 +32,7 @@ class GoogleSheetsReader:
             raise
     
     def read_range(self, sheet_name, range_notation='A:Z'):
-        """
-        Lee un rango de datos de una hoja específica
-        
-        Args:
-            sheet_name: Nombre de la hoja (ej: "Horarios", "Eventos")
-            range_notation: Rango a leer (ej: "A:Z", "A1:D100")
-        
-        Returns:
-            Lista de diccionarios con los datos
-        """
+
         try:
             range_name = f"'{sheet_name}'!{range_notation}"
             result = self.service.spreadsheets().values().get(
@@ -55,13 +46,10 @@ class GoogleSheetsReader:
                 print(f"⚠️  No hay datos en {sheet_name}")
                 return []
             
-            # Primera fila son los headers
             headers = values[0]
             data = []
             
-            # Convertir filas a diccionarios
             for row in values[1:]:
-                # Rellenar celdas vacías
                 while len(row) < len(headers):
                     row.append('')
                 
@@ -76,23 +64,18 @@ class GoogleSheetsReader:
             return []
     
     def get_horarios(self):
-        """Obtiene todos los horarios"""
         return self.read_range('Horarios')
     
     def get_eventos(self):
-        """Obtiene todos los eventos"""
         return self.read_range('Eventos')
     
     def get_carreras(self):
-        """Obtiene todas las carreras"""
         return self.read_range('Carreras')
     
     def get_avisos(self):
-        """Obtiene todos los avisos"""
         return self.read_range('Avisos')
     
     def get_all_data(self):
-        """Obtiene todos los datos (horarios, eventos, carreras, avisos)"""
         return {
             'horarios': self.get_horarios(),
             'eventos': self.get_eventos(),
@@ -101,33 +84,29 @@ class GoogleSheetsReader:
         }
 
 
-# Uso de ejemplo:
 if __name__ == "__main__":
-    # Configuración
-    CREDENTIALS_FILE = "api/credentials.json"  # Ruta a tu archivo de credenciales
+    CREDENTIALS_FILE = "api/credentials.json"  
     SHEET_ID = "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo"
     
-    # Crear lector
     reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
     
-    # Obtener datos
     print("\n" + "="*60)
     print("HORARIOS")
     print("="*60)
     horarios = reader.get_horarios()
-    for h in horarios[:3]:  # Mostrar primeros 3
+    for h in horarios[:3]: 
         print(h)
     
     print("\n" + "="*60)
     print("EVENTOS")
     print("="*60)
     eventos = reader.get_eventos()
-    for e in eventos[:3]:  # Mostrar primeros 3
+    for e in eventos[:3]: 
         print(e)
     
     print("\n" + "="*60)
     print("CARRERAS")
     print("="*60)
     carreras = reader.get_carreras()
-    for c in carreras[:3]:  # Mostrar primeros 3
+    for c in carreras[:3]:  
         print(c)
