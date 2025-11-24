@@ -52,25 +52,41 @@ print(f"   Directorio actual: {os.getcwd()}")
 print(f"   Archivos en api/: {os.listdir('api/') if os.path.exists('api/') else 'CARPETA NO EXISTE'}")
 
 import json
+import tempfile
 import os
 
 google_sheets_reader = None
 if GOOGLE_SHEETS_AVAILABLE:
     try:
-        # Crear credentials.json dinámicamente si existe la variable
-        GOOGLE_CREDENTIALS_JSON = os.getenv("GOOGLE_CREDENTIALS")
+        # Leer credenciales de variable de entorno O archivo
+        creds_source = None
         
-        if GOOGLE_CREDENTIALS_JSON:
-            # Crear el archivo en /tmp (temporal)
-            CREDENTIALS_FILE = "/tmp/credentials.json"
-            with open(CREDENTIALS_FILE, 'w') as f:
-                f.write(GOOGLE_CREDENTIALS_JSON)
+        # Intenta primero variable de entorno
+        if os.getenv("GOOGLE_CREDENTIALS_JSON"):
+            creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+            creds_source = "environment variable"
+        # Si no, intenta archivo
+        elif os.path.exists("api/credentials.json"):
+            with open("api/credentials.json", 'r', encoding='utf-8') as f:
+                creds_json = f.read()
+            creds_source = "file"
+        else:
+            creds_json = None
+        
+        if creds_json:
+            # Parsear el JSON para validarlo
+            creds_dict = json.loads(creds_json)
+            
+            # Crear archivo temporal con credenciales válidas
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
+                json.dump(creds_dict, f)
+                CREDENTIALS_FILE = f.name
             
             SHEET_ID = os.getenv("GOOGLE_SHEETS_ID", "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo")
             google_sheets_reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
-            print("✅ Google Sheets Reader inicializado correctamente")
+            print(f"✅ Google Sheets Reader inicializado desde {creds_source}")
         else:
-            print("⚠️ GOOGLE_CREDENTIALS no configurada")
+            print("⚠️ No se encontraron credenciales")
             google_sheets_reader = None
             
     except Exception as e:
