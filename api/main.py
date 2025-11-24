@@ -188,8 +188,10 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
     
     if carreras:
         print(f"\n🎓 Procesando {len(carreras)} carreras...")
+        print(f"   DEBUG: Primer carrera = {carreras[0]}")
         for c in carreras:
             try:
+                print(f"   DEBUG: Procesando {c}")
                 duracion = c.get('Duracion_Semestres', 8)
                 if isinstance(duracion, str):
                     duracion = int(duracion)
