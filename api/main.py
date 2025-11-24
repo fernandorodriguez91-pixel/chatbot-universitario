@@ -54,24 +54,32 @@ print(f"   Archivos en api/: {os.listdir('api/') if os.path.exists('api/') else 
 import json
 import tempfile
 import os
+import base64
 
 google_sheets_reader = None
 if GOOGLE_SHEETS_AVAILABLE:
     try:
-        # Leer SOLO de variable de entorno
-        creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+        # Intenta leer archivo local primero
+        CREDENTIALS_FILE = "api/credentials.json"
         
-        if creds_json:
-            # Escribir a archivo temporal
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
-                f.write(creds_json)
-                CREDENTIALS_FILE = f.name
-            
+        if not os.path.exists(CREDENTIALS_FILE):
+            # Si no existe, intenta variable de entorno
+            creds_b64 = os.getenv("GOOGLE_CREDENTIALS_B64")
+            if creds_b64:
+                # Decodificar base64
+                creds_json = base64.b64decode(creds_b64).decode('utf-8')
+                # Crear archivo temporal
+                with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
+                    f.write(creds_json)
+                    CREDENTIALS_FILE = f.name
+                    print(f"✅ Credenciales desde base64")
+        
+        if os.path.exists(CREDENTIALS_FILE):
             SHEET_ID = os.getenv("GOOGLE_SHEETS_ID", "1nEuZLDuowW5d9Li-91fO3DObAXTsuPYtTZM5vGpn_qo")
             google_sheets_reader = GoogleSheetsReader(CREDENTIALS_FILE, SHEET_ID)
-            print("✅ Google Sheets Reader inicializado desde variable de entorno")
+            print("✅ Google Sheets Reader inicializado")
         else:
-            print("⚠️ GOOGLE_CREDENTIALS_JSON no configurada")
+            print("⚠️ No credentials found")
             google_sheets_reader = None
             
     except Exception as e:
