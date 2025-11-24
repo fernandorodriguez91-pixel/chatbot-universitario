@@ -1,23 +1,21 @@
 from typing import Optional
 from datetime import datetime
+import pytz
+import random
 from models.mensaje import Mensaje, TipoMensaje
 from models.conocimiento import BaseConocimiento, DiaSemana
 from services.procesador_lenguaje import ProcesadorLenguajeNatural
 
 class GestorRespuestas:
-    """Clase que gestiona las respuestas del chatbot"""
     
     def __init__(self, base_conocimiento: BaseConocimiento):
         self.base_conocimiento = base_conocimiento
         self.procesador = ProcesadorLenguajeNatural()
         
     def generar_respuesta(self, mensaje: Mensaje) -> str:
-        """Genera una respuesta basada en el mensaje recibido"""
-        # Extraer intenciones del mensaje
         intenciones = self.procesador.extraer_intenciones(mensaje)
         tipo = intenciones['tipo']
         
-        # Generar respuesta según el tipo
         if tipo == TipoMensaje.SALUDO:
             return self._respuesta_saludo()
         
@@ -42,14 +40,18 @@ class GestorRespuestas:
             return self._respuesta_default()
     
     def _respuesta_saludo(self) -> str:
-        """Genera respuesta de saludo"""
-        hora = datetime.now().hour
+        # Zona horaria de México
+        tz_mexico = pytz.timezone('America/Mexico_City')
+        hora = datetime.now(tz_mexico).hour
+        
         if 5 <= hora < 12:
-            saludo = "¡Buenos días! 🌅"
-        elif 12 <= hora < 19:
-            saludo = "¡Buenas tardes! ☀️"
+            saludo = "¡Buenos días! 🌅 "
+        elif 12 <= hora < 18:
+            saludo = "¡Buenas tardes! 🌤️ "
+        elif 18 <= hora < 21:
+            saludo = "¡Buenas noches! 🌙 "
         else:
-            saludo = "¡Buenas noches! 🌙"
+            saludo = "¿Aún despierto? 🌙 "
         
         respuesta = f"{saludo}\n\n"
         respuesta += "Soy tu asistente virtual universitario. 🎓\n\n"
@@ -63,19 +65,15 @@ class GestorRespuestas:
         return respuesta
     
     def _respuesta_despedida(self) -> str:
-        """Genera respuesta de despedida"""
         respuestas = [
             "¡Hasta pronto! 👋 Estoy aquí cuando me necesites.",
             "¡Adiós! 😊 Que tengas un excelente día.",
             "¡Nos vemos! 🎓 Mucho éxito en tus estudios."
         ]
-        import random
         return random.choice(respuestas)
     
     def _respuesta_horario(self, servicio: Optional[str]) -> str:
-        """Genera respuesta sobre horarios"""
         if servicio is None:
-            # Mostrar todos los horarios
             respuesta = "📅 *HORARIOS DE SERVICIOS*\n\n"
             if not self.base_conocimiento.horarios:
                 return "Lo siento, no tengo información de horarios disponible. 😔"
@@ -84,7 +82,6 @@ class GestorRespuestas:
                 respuesta += horario.obtener_info() + "\n"
             return respuesta
         
-        # Buscar horario específico
         horario = self.base_conocimiento.buscar_horario(servicio)
         if horario:
             return horario.obtener_info()
@@ -96,14 +93,13 @@ class GestorRespuestas:
             return respuesta
     
     def _respuesta_eventos(self) -> str:
-        """Genera respuesta sobre eventos"""
         eventos_proximos = self.base_conocimiento.obtener_eventos_proximos(dias=60)
         
         if not eventos_proximos:
             return "No hay eventos próximos registrados en este momento. 📅"
         
         respuesta = "🎉 *PRÓXIMOS EVENTOS*\n\n"
-        for evento in eventos_proximos[:5]:  # Mostrar máximo 5 eventos
+        for evento in eventos_proximos[:5]: 
             respuesta += evento.obtener_info() + "\n"
         
         if len(eventos_proximos) > 5:
@@ -112,9 +108,8 @@ class GestorRespuestas:
         return respuesta
     
     def _respuesta_carrera(self, carrera: Optional[str]) -> str:
-        """Genera respuesta sobre carreras"""
         if carrera is None:
-            # Mostrar lista de carreras
+            
             if not self.base_conocimiento.carreras:
                 return "Lo siento, no tengo información de carreras disponible. 😔"
             
@@ -124,7 +119,6 @@ class GestorRespuestas:
             respuesta += "\n¿Sobre cuál te gustaría saber más?"
             return respuesta
         
-        # Buscar carrera específica
         info_carrera = self.base_conocimiento.buscar_carrera(carrera)
         if info_carrera:
             return info_carrera.obtener_info()
@@ -160,7 +154,6 @@ class GestorRespuestas:
         return respuesta
     
     def obtener_dia_actual(self) -> DiaSemana:
-        """Obtiene el día actual de la semana"""
         dias = {
             0: DiaSemana.LUNES,
             1: DiaSemana.MARTES,
