@@ -41,7 +41,7 @@ class GestorRespuestas:
     
     def _respuesta_saludo(self) -> str:
         # Zona horaria de México
-        tz_mexico = pytz.timezone('America/Mexico_City')
+        tz_mexico = pytz.timezone('America/Tijuana')
         hora = datetime.now(tz_mexico).hour
         
         if 5 <= hora < 12:
