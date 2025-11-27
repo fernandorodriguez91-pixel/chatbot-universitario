@@ -33,6 +33,10 @@ class GestorRespuestas:
             carrera = intenciones.get('carrera')
             return self._respuesta_carrera(carrera)
         
+        elif tipo == TipoMensaje.CONSULTA_SERVICIO:
+            servicio = intenciones.get('servicio')
+            return self._respuesta_servicios(servicio)
+        
         elif tipo == TipoMensaje.CONSULTA_TRAMITE:
             return self._respuesta_tramites()
         
@@ -59,6 +63,7 @@ class GestorRespuestas:
         respuesta += "📚 Horarios de biblioteca, laboratorios y comedor\n"
         respuesta += "🎉 Eventos del ciclo escolar\n"
         respuesta += "🎓 Información sobre carreras\n"
+        respuesta += "📋 Servicios universitarios\n"
         respuesta += "📋 Trámites administrativos\n\n"
         respuesta += "¿En qué puedo ayudarte hoy?"
         
@@ -129,6 +134,27 @@ class GestorRespuestas:
                 respuesta += f"• {nombre.capitalize()}\n"
             return respuesta
     
+    def _respuesta_servicios(self, servicio: Optional[str]) -> str:
+        if servicio is None:
+            if not self.base_conocimiento.servicios:
+                return "Lo siento, no hay servicios disponibles. 😔"
+            
+            respuesta = "📋 *SERVICIOS DISPONIBLES*\n\n"
+            for nombre in self.base_conocimiento.servicios.keys():
+                respuesta += f"• {nombre.capitalize()}\n"
+            respuesta += "\n¿Sobre cuál te gustaría saber más?"
+            return respuesta
+        
+        info_servicio = self.base_conocimiento.buscar_servicio(servicio)
+        if info_servicio:
+            return info_servicio.obtener_info()
+        else:
+            respuesta = f"No encontré información sobre '{servicio}'. 😔\n\n"
+            respuesta += "Servicios disponibles:\n"
+            for nombre in self.base_conocimiento.servicios.keys():
+                respuesta += f"• {nombre.capitalize()}\n"
+            return respuesta
+    
     def _respuesta_tramites(self) -> str:
         """Genera respuesta sobre trámites"""
         if not self.base_conocimiento.tramites:
@@ -148,6 +174,7 @@ class GestorRespuestas:
         respuesta += "📚 Horarios (biblioteca, laboratorios, comedor)\n"
         respuesta += "🎉 Eventos del ciclo escolar\n"
         respuesta += "🎓 Información sobre carreras\n"
+        respuesta += "📋 Servicios universitarios\n"
         respuesta += "📋 Trámites administrativos\n\n"
         respuesta += "¿Podrías reformular tu pregunta?"
         
