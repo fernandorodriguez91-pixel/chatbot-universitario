@@ -26,13 +26,18 @@ class ProcesadorLenguajeNatural:
             'certificado', 'título', 'como solicitar', 'requisitos'
         ]
         
+        self.palabras_servicio = [
+            'servicio', 'servicios', 'disponible', 'que hay',
+            'ofrecen', 'oferta', 'recursos', 'instalaciones'
+        ]
+        
         self.saludos = [
-            'hola', 'buenos días', 'buenas tardes', 'buenas noches',
-            'qué tal', 'saludos', 'hey', 'ola'
+            'hola', 'buenos dias', 'buenas tardes', 'buenas noches',
+            'que tal', 'saludos', 'hey', 'ola'
         ]
         
         self.despedidas = [
-            'adiós', 'hasta luego', 'chao', 'bye', 'nos vemos',
+            'adios', 'hasta luego', 'chao', 'bye', 'nos vemos',
             'gracias', 'ok', 'perfecto'
         ]
         
@@ -57,12 +62,14 @@ class ProcesadorLenguajeNatural:
         score_evento = sum(1 for palabra in self.palabras_evento if palabra in texto_limpio)
         score_carrera = sum(1 for palabra in self.palabras_carrera if palabra in texto_limpio)
         score_tramite = sum(1 for palabra in self.palabras_tramite if palabra in texto_limpio)
+        score_servicio = sum(1 for palabra in self.palabras_servicio if palabra in texto_limpio)
         
         scores = {
             TipoMensaje.CONSULTA_HORARIO: score_horario,
             TipoMensaje.CONSULTA_EVENTO: score_evento,
             TipoMensaje.CONSULTA_CARRERA: score_carrera,
-            TipoMensaje.CONSULTA_TRAMITE: score_tramite
+            TipoMensaje.CONSULTA_TRAMITE: score_tramite,
+            TipoMensaje.CONSULTA_SERVICIO: score_servicio
         }
         
         max_score = max(scores.values())
@@ -110,8 +117,8 @@ class ProcesadorLenguajeNatural:
         return None
     
     def es_pregunta(self, texto: str) -> bool:
-        palabras_pregunta = ['qué', 'cómo', 'cuándo', 'dónde', 'quién', 
-                            'por qué', 'cuál', 'cuáles', 'cuánto']
+        palabras_pregunta = ['que', 'como', 'cuando', 'donde', 'quien', 
+                            'por que', 'cual', 'cuales', 'cuanto']
         texto_limpio = texto.lower()
         return any(palabra in texto_limpio for palabra in palabras_pregunta) or texto.strip().endswith('?')
     
