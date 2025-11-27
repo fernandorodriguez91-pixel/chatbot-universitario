@@ -93,6 +93,7 @@ class MensajeEntrada(BaseModel):
     horarios_sheets: Optional[List[Dict[str, Any]]] = None
     eventos_sheets: Optional[List[Dict[str, Any]]] = None
     carreras_sheets: Optional[List[Dict[str, Any]]] = None
+    servicios_sheets: Optional[List[Dict[str, Any]]] = None
 
 class RespuestaAPI(BaseModel):
     success: bool
@@ -241,7 +242,8 @@ async def root():
         "datos_cargados": {
             "horarios": len(base_conocimiento.horarios),
             "eventos": len(base_conocimiento.eventos),
-            "carreras": len(base_conocimiento.carreras)
+            "carreras": len(base_conocimiento.carreras),
+            "servicios": len(base_conocimiento.servicios)
         }
     }
 
@@ -281,7 +283,8 @@ async def webhook_whatsapp_twilio(request: Request):
                 cargar_datos_desde_sheets(
                     all_data['horarios'],
                     all_data['eventos'],
-                    all_data['carreras']
+                    all_data['carreras'],
+                    all_data['servicios']
                 )
             except Exception as e:
                 print(f"⚠️  Error leyendo Google Sheets: {e}")
@@ -329,11 +332,12 @@ async def webhook_whatsapp(datos: MensajeEntrada):
     try:
         print(f"\n📨 Mensaje de {datos.telefono}: {datos.contenido}")
         
-        if datos.horarios_sheets or datos.eventos_sheets or datos.carreras_sheets:
+        if datos.horarios_sheets or datos.eventos_sheets or datos.carreras_sheets or datos.servicios_sheets:
             cargar_datos_desde_sheets(
                 datos.horarios_sheets or [],
                 datos.eventos_sheets or [],
-                datos.carreras_sheets or []
+                datos.carreras_sheets or [],
+                datos.servicios_sheets or []
             )
         
         telefono = datos.telefono
@@ -385,9 +389,10 @@ async def webhook_raw(request: Request):
         horarios = body.get('horarios_sheets', [])
         eventos = body.get('eventos_sheets', [])
         carreras = body.get('carreras_sheets', [])
+        servicios = body.get('servicios_sheets', [])
         
-        if horarios or eventos or carreras:
-            cargar_datos_desde_sheets(horarios, eventos, carreras)
+        if horarios or eventos or carreras or servicios:
+            cargar_datos_desde_sheets(horarios, eventos, carreras, servicios)
         
         usuario = base_datos.obtener_usuario(telefono)
         if not usuario:
@@ -479,6 +484,18 @@ async def listar_carreras():
         for nombre, carrera in base_conocimiento.carreras.items()
     }
 
+@app.get("/servicios")
+async def listar_servicios():
+    return {
+        nombre: {
+            "descripcion": servicio.descripcion,
+            "pagos": servicio.pagos,
+            "dias": servicio.dias,
+            "lugar": servicio.lugar
+        }
+        for nombre, servicio in base_conocimiento.servicios.items()
+    }
+
 @app.get("/health")
 async def health_check():
     return {
@@ -488,7 +505,8 @@ async def health_check():
         "datos_en_memoria": {
             "horarios": len(base_conocimiento.horarios),
             "eventos": len(base_conocimiento.eventos),
-            "carreras": len(base_conocimiento.carreras)
+            "carreras": len(base_conocimiento.carreras),
+            "servicios": len(base_conocimiento.servicios)
         }
     }
 
