@@ -12,7 +12,7 @@ sys.path.append('..')
 from models.usuario import Usuario
 from models.mensaje import Mensaje
 from models.conocimiento import (
-    BaseConocimiento, Horario, Evento, Carrera, DiaSemana
+    BaseConocimiento, Horario, Evento, Carrera, DiaSemana, Servicio
 )
 from services.procesador_lenguaje import ProcesadorLenguajeNatural
 from services.gestor_respuestas import GestorRespuestas
@@ -100,7 +100,7 @@ class RespuestaAPI(BaseModel):
     usuario: Optional[dict] = None
     tipo_mensaje: Optional[str] = None
 
-def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carreras: List[Dict]):
+def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carreras: List[Dict], servicios: List[Dict]):
     
     print("\n" + "="*60)
     print("📊 CARGANDO DATOS DESDE GOOGLE SHEETS")
@@ -109,6 +109,7 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
     base_conocimiento.horarios.clear()
     base_conocimiento.eventos.clear()
     base_conocimiento.carreras.clear()
+    base_conocimiento.servicios.clear()
     
     if horarios:
         print(f"\n📅 Procesando {len(horarios)} horarios...")
@@ -207,9 +208,26 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
             except Exception as e:
                 print(f"   ❌ Error procesando carrera: {e}")
     
+    if servicios:
+        print(f"\n📋 Procesando {len(servicios)} servicios...")
+        for s in servicios:
+            try:
+                servicio = Servicio(
+                    nombre=str(s.get('Servicio', 'Servicio')).strip(),
+                    descripcion=str(s.get('Servicio social', '')).strip(),
+                    pagos=str(s.get('Pagos', '')).strip(),
+                    dias=str(s.get('Dias Hábiles', '')).strip(),
+                    lugar=str(s.get('Lugar', '')).strip()
+                )
+                base_conocimiento.agregar_servicio(servicio)
+                print(f"   ✅ {servicio.nombre}")
+            except Exception as e:
+                print(f"   ❌ Error procesando servicio: {e}")
+    
     print("\n" + "="*60)
     print(f"✅ DATOS CARGADOS: {len(base_conocimiento.horarios)} horarios, "
-          f"{len(base_conocimiento.eventos)} eventos, {len(base_conocimiento.carreras)} carreras")
+          f"{len(base_conocimiento.eventos)} eventos, {len(base_conocimiento.carreras)} carreras, "
+          f"{len(base_conocimiento.servicios)} servicios")
     print("="*60 + "\n")
 
 

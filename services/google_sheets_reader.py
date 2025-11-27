@@ -75,12 +75,16 @@ class GoogleSheetsReader:
     def get_avisos(self):
         return self.read_range('Avisos')
     
+    def get_servicios(self):
+        return self.read_range('Servicios')
+    
     def get_all_data(self):
         return {
             'horarios': self.get_horarios(),
             'eventos': self.get_eventos(),
             'carreras': self.get_carreras(),
-            'avisos': self.get_avisos()
+            'avisos': self.get_avisos(),
+            'servicios': self.get_servicios()
         }
 
 

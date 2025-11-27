@@ -128,6 +128,25 @@ class Carrera:
         respuesta += "¿Necesitas más información? 😊"
     
         return respuesta
+    
+class Servicio:
+    def __init__(self, nombre: str, descripcion: str, pagos: str = "", dias: str = "", lugar: str = ""):
+        self.nombre = nombre
+        self.descripcion = descripcion
+        self.pagos = pagos
+        self.dias = dias
+        self.lugar = lugar
+    
+    def obtener_info(self) -> str:
+        respuesta = f"📋 *{self.nombre.upper()}*\n"
+        respuesta += f"{self.descripcion}\n"
+        if self.pagos:
+            respuesta += f"💳 Pagos: {self.pagos}\n"
+        if self.dias:
+            respuesta += f"📅 Días: {self.dias}\n"
+        if self.lugar:
+            respuesta += f"📍 Lugar: {self.lugar}\n"
+        return respuesta
 
 class BaseConocimiento:
 
@@ -137,6 +156,7 @@ class BaseConocimiento:
         self.eventos: List[Evento] = []
         self.carreras: Dict[str, Carrera] = {}
         self.tramites: Dict[str, str] = {}
+        self.servicios = {}
         
     def agregar_horario(self, horario: Horario):
        
@@ -153,6 +173,10 @@ class BaseConocimiento:
     def agregar_tramite(self, nombre: str, descripcion: str):
         
         self.tramites[nombre.lower()] = descripcion
+
+    def agregar_servicio(self, servicio: Servicio):
+        
+        self.servicios[servicio.nombre.lower()] = servicio
         
     def buscar_horario(self, servicio: str) -> Optional[Horario]:
        
@@ -174,3 +198,6 @@ class BaseConocimiento:
     def buscar_tramite(self, nombre: str) -> Optional[str]:
         
         return self.tramites.get(nombre.lower())
+    
+    def buscar_servicio(self, nombre: str) -> Optional[Servicio]:
+        return self.servicios.get(nombre.lower())
