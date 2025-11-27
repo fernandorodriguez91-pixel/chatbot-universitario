@@ -8,3 +8,4 @@ twilio==8.10.0
 pydantic==2.10.0
 requests==2.31.0
 pytz==2024.1
+python-multipart==0.0.6
