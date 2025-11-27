@@ -8,6 +8,7 @@ class TipoMensaje(Enum):
     CONSULTA_HORARIO = "consulta_horario"
     CONSULTA_EVENTO = "consulta_evento"
     CONSULTA_CARRERA = "consulta_carrera"
+    CONSULTA_SERVICIO = "consulta_servicio"
     CONSULTA_TRAMITE = "consulta_tramite"
     SALUDO = "saludo"
     DESPEDIDA = "despedida"
