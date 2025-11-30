@@ -6,6 +6,7 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime, time
 import json
 import os
+import re
 
 import sys
 sys.path.append('..')
@@ -101,6 +102,62 @@ class RespuestaAPI(BaseModel):
     usuario: Optional[dict] = None
     tipo_mensaje: Optional[str] = None
 
+
+def parse_fecha_google_sheets(fecha_str: str) -> Optional[datetime]:
+    """
+    Parsea fechas en múltiples formatos de Google Sheets
+    Ej: "25 de noviembre", "25/11/2025", "2025-11-25", "25 de noviembre - 10 de diciembre"
+    """
+    if not fecha_str or str(fecha_str).strip() == '':
+        return None
+    
+    fecha_str = str(fecha_str).strip()
+    
+    # Meses en español
+    meses_es = {
+        'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
+        'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
+        'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
+    }
+    
+    try:
+        # Formato: "25 de noviembre" o "25 de noviembre - 10 de diciembre"
+        if ' de ' in fecha_str:
+            # Extraer primer fecha
+            match = re.search(r'(\d+)\s+de\s+(\w+)', fecha_str)
+            if match:
+                dia = int(match.group(1))
+                mes_nombre = match.group(2).lower()
+                mes = meses_es.get(mes_nombre, 1)
+                
+                # Asumir año actual o próximo
+                año = datetime.now().year
+                
+                # Si el mes ya pasó, usar próximo año
+                if datetime.now().month > mes or (datetime.now().month == mes and datetime.now().day > dia):
+                    año += 1
+                
+                return datetime(año, mes, dia)
+        
+        # Formato: "25/11/2025" o "25/11"
+        elif '/' in fecha_str:
+            partes = fecha_str.split('/')
+            dia = int(partes[0])
+            mes = int(partes[1])
+            año = int(partes[2]) if len(partes) > 2 else datetime.now().year
+            return datetime(año, mes, dia)
+        
+        # Formato: "2025-11-25"
+        elif '-' in fecha_str and len(fecha_str) >= 10:
+            return datetime.fromisoformat(fecha_str.split(' ')[0])
+        
+    except Exception as e:
+        print(f"   ⚠️  Error parseando fecha '{fecha_str}': {e}")
+        return None
+    
+    return None
+
+
 def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carreras: List[Dict], servicios: List[Dict]):
     
     print("\n" + "="*60)
@@ -163,27 +220,23 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
                 fecha_inicio_str = str(e.get('Fecha_Inicio', ''))
                 fecha_fin_str = str(e.get('Fecha_Fin', ''))
                 
-                if fecha_inicio_str and fecha_inicio_str != '':
-                    try:
-                        if '/' in fecha_inicio_str:
-                            fecha_inicio = datetime.strptime(fecha_inicio_str, '%d/%m/%Y')
-                            fecha_fin = datetime.strptime(fecha_fin_str, '%d/%m/%Y') if fecha_fin_str else fecha_inicio
-                        else:
-                            fecha_inicio = datetime.strptime(fecha_inicio_str, '%Y-%m-%d')
-                            fecha_fin = datetime.strptime(fecha_fin_str, '%Y-%m-%d') if fecha_fin_str else fecha_inicio
-                        
-                        evento = Evento(
-                            nombre=str(e.get('Nombre', 'Evento')),
-                            descripcion=str(e.get('Descripcion', '')),
-                            fecha_inicio=fecha_inicio,
-                            fecha_fin=fecha_fin,
-                            lugar=str(e.get('Lugar', '')),
-                            categoria=str(e.get('Categoria', 'General'))
-                        )
-                        base_conocimiento.agregar_evento(evento)
-                        print(f"   ✅ {evento.nombre}")
-                    except:
-                        print(f"   ⚠️  Formato de fecha inválido: {fecha_inicio_str}")
+                # ← NUEVA FUNCIÓN DE PARSEO CON SOPORTE A MÚLTIPLES FORMATOS
+                fecha_inicio = parse_fecha_google_sheets(fecha_inicio_str)
+                fecha_fin = parse_fecha_google_sheets(fecha_fin_str) if fecha_fin_str else fecha_inicio
+                
+                if fecha_inicio:
+                    evento = Evento(
+                        nombre=str(e.get('Nombre', 'Evento')),
+                        descripcion=str(e.get('Descripcion', '')),
+                        fecha_inicio=fecha_inicio,
+                        fecha_fin=fecha_fin or fecha_inicio,
+                        lugar=str(e.get('Lugar', '')),
+                        categoria=str(e.get('Categoria', 'General'))
+                    )
+                    base_conocimiento.agregar_evento(evento)
+                    print(f"   ✅ {evento.nombre} ({fecha_inicio.strftime('%d/%m/%Y')})")
+                else:
+                    print(f"   ⚠️  No se pudo parsear fecha para: {e.get('Nombre', 'Evento')}")
                         
             except Exception as err:
                 print(f"   ❌ Error procesando evento: {err}")
