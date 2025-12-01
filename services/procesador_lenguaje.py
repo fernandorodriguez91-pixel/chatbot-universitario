@@ -9,40 +9,40 @@ class ProcesadorLenguajeNatural:
             'horario', 'abierto', 'cierra', 'abre', 'hora', 'cuando',
             'biblioteca', 'laboratorio', 'comedor', 'cafetería'
         ]
-        
+    
         self.palabras_evento = [
             'evento', 'actividad', 'cuando', 'fecha', 'examen',
             'inscripciones', 'calendario', 'periodo', 'vacaciones'
         ]
-        
+    
         self.palabras_carrera = [
             'carrera', 'licenciatura', 'ingenieria', 'ingeniería',
             'programa', 'estudiar', 'materias', 'plan de estudios', 
             'semestre', 'mecatronica', 'mecatonica', 'ingenieria mecatronica'
         ]       
-        
+    
         self.palabras_tramite = [
             'trámite', 'documentos', 'credencial', 'constancia',
             'certificado', 'título', 'como solicitar', 'requisitos'
         ]
-        
+    
+        self.palabras_servicio = [
+            'servicio', 'servicios', 'disponible', 'que hay',
+            'ofrecen', 'oferta', 'recursos', 'instalaciones'
+        ]
+    
         self.palabras_suspension = [
             'suspensión', 'suspensiones', 'clases', 'hay clases', 'cancelado',
             'canceladas', 'suspendido', 'actividades', 'hoy', 'suspension',
-            'mañana', 'manana', 'mañana', 'pasado', 'lunes', 'martes', 'miercoles',
+            'mañana', 'manana', 'pasado', 'lunes', 'martes', 'miercoles',
             'miércoles', 'jueves', 'viernes'
         ]
-        
-        self.palabras_suspension = [
-            'suspensión', 'suspensiones', 'clases', 'hay clases', 'cancelado',
-            'canceladas', 'suspendido', 'actividades', 'hoy', 'suspension'
-        ]
-        
+
         self.saludos = [
             'hola', 'buenos dias', 'buenas tardes', 'buenas noches',
             'que tal', 'saludos', 'hey', 'ola'
         ]
-        
+    
         self.despedidas = [
             'adios', 'hasta luego', 'chao', 'bye', 'nos vemos',
             'gracias', 'ok', 'perfecto'
