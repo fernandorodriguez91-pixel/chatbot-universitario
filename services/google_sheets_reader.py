@@ -16,7 +16,6 @@ class GoogleSheetsReader:
         try:
             import json
 
-# Leer el archivo ignorando BOM
             with open(self.credentials_file, 'r', encoding='utf-8-sig') as f:
                 service_account_info = json.load(f)
 
@@ -78,13 +77,17 @@ class GoogleSheetsReader:
     def get_servicios(self):
         return self.read_range('Servicios')
     
+    def get_suspensiones(self):
+        return self.read_range('Suspensiones')
+    
     def get_all_data(self):
         return {
             'horarios': self.get_horarios(),
             'eventos': self.get_eventos(),
             'carreras': self.get_carreras(),
             'avisos': self.get_avisos(),
-            'servicios': self.get_servicios()
+            'servicios': self.get_servicios(),
+            'suspensiones': self.get_suspensiones()
         }
 
 
@@ -114,3 +117,17 @@ if __name__ == "__main__":
     carreras = reader.get_carreras()
     for c in carreras[:3]:  
         print(c)
+    
+    print("\n" + "="*60)
+    print("SERVICIOS")
+    print("="*60)
+    servicios = reader.get_servicios()
+    for s in servicios[:3]:  
+        print(s)
+    
+    print("\n" + "="*60)
+    print("SUSPENSIONES")
+    print("="*60)
+    suspensiones = reader.get_suspensiones()
+    for susp in suspensiones[:3]:  
+        print(susp)

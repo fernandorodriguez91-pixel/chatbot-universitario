@@ -40,11 +40,13 @@ class GestorRespuestas:
         elif tipo == TipoMensaje.CONSULTA_TRAMITE:
             return self._respuesta_tramites()
         
+        elif tipo == TipoMensaje.CONSULTA_SUSPENSION:
+            return self._respuesta_suspensiones()
+        
         else:
             return self._respuesta_default()
     
     def _respuesta_saludo(self) -> str:
-        # Zona horaria de México
         tz_mexico = pytz.timezone('America/Tijuana')
         hora = datetime.now(tz_mexico).hour
         
@@ -64,7 +66,8 @@ class GestorRespuestas:
         respuesta += "🎉 Eventos del ciclo escolar\n"
         respuesta += "🎓 Información sobre carreras\n"
         respuesta += "📋 Servicios universitarios\n"
-        respuesta += "📋 Trámites administrativos\n\n"
+        respuesta += "📋 Trámites administrativos\n"
+        respuesta += "📅 Suspensiones de clases\n\n"
         respuesta += "¿En qué puedo ayudarte hoy?"
         
         return respuesta
@@ -145,18 +148,32 @@ class GestorRespuestas:
             respuesta += "\n¿Sobre cuál te gustaría saber más?"
             return respuesta
         
+        palabras_servicios = {
+            'inscripciones': ['inscripcion', 'inscribir', 'registro', 'registrar'],
+            'darse de baja': ['baja', 'desinscribir', 'cancelar'],
+            'constancias': ['constancia', 'constancias', 'comprobante'],
+            'solicitud de credenciales': ['credencial', 'credenciales', 'id', 'carnet']
+        }
+        
+        servicio_limpio = servicio.lower().replace('á', 'a').replace('é', 'e')
+        
         info_servicio = self.base_conocimiento.buscar_servicio(servicio)
         if info_servicio:
             return info_servicio.obtener_info()
-        else:
-            respuesta = f"No encontré información sobre '{servicio}'. 😔\n\n"
-            respuesta += "Servicios disponibles:\n"
-            for nombre in self.base_conocimiento.servicios.keys():
-                respuesta += f"• {nombre.capitalize()}\n"
-            return respuesta
+        
+        for nombre_servicio, keywords in palabras_servicios.items():
+            if any(keyword in servicio_limpio for keyword in keywords):
+                info_servicio = self.base_conocimiento.buscar_servicio(nombre_servicio)
+                if info_servicio:
+                    return info_servicio.obtener_info()
+        
+        respuesta = f"No encontré información sobre '{servicio}'. 😔\n\n"
+        respuesta += "Servicios disponibles:\n"
+        for nombre in self.base_conocimiento.servicios.keys():
+            respuesta += f"• {nombre.capitalize()}\n"
+        return respuesta
     
     def _respuesta_tramites(self) -> str:
-        """Genera respuesta sobre trámites"""
         if not self.base_conocimiento.tramites:
             return "Lo siento, no tengo información de trámites disponible. 😔"
         
@@ -167,15 +184,26 @@ class GestorRespuestas:
         
         return respuesta
     
+    def _respuesta_suspensiones(self) -> str:
+        suspension_hoy = self.base_conocimiento.obtener_suspension_hoy()
+        
+        if suspension_hoy is None:
+            return "No hay información de suspensiones para hoy. 📚"
+        
+        respuesta = "📅 *SUSPENSIONES DE HOY*\n\n"
+        respuesta += suspension_hoy
+        
+        return respuesta
+    
     def _respuesta_default(self) -> str:
-        """Respuesta por defecto cuando no se entiende el mensaje"""
         respuesta = "Lo siento, no entendí tu pregunta. 🤔\n\n"
         respuesta += "Puedo ayudarte con:\n"
         respuesta += "📚 Horarios (biblioteca, laboratorios, comedor)\n"
         respuesta += "🎉 Eventos del ciclo escolar\n"
         respuesta += "🎓 Información sobre carreras\n"
         respuesta += "📋 Servicios universitarios\n"
-        respuesta += "📋 Trámites administrativos\n\n"
+        respuesta += "📋 Trámites administrativos\n"
+        respuesta += "📅 Suspensiones de clases\n\n"
         respuesta += "¿Podrías reformular tu pregunta?"
         
         return respuesta

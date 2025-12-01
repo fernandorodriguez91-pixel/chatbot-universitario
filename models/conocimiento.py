@@ -14,7 +14,6 @@ class DiaSemana(Enum):
 
 class Horario:
     
-    
     def __init__(self, servicio: str, dias: List[DiaSemana], 
                  hora_inicio: time, hora_fin: time, notas: str = ""):
         self.servicio = servicio
@@ -105,32 +104,27 @@ class Carrera:
   
         respuesta = ""
     
-    # Título
         respuesta += f"🎓 *{self.nombre.upper()}*\n"
         respuesta += "="*50 + "\n\n"
     
-    # Descripción
         if self.descripcion and str(self.descripcion).strip():
             respuesta += f"📚 *DESCRIPCIÓN:*\n"
             respuesta += f"{self.descripcion}\n\n"
     
-    # Duración
         respuesta += f"⏱️ *DURACIÓN:*\n"
         respuesta += f"{self.duracion_semestres} semestres\n\n"
     
-    # Coordinador
         if self.coordinador and str(self.coordinador).strip():
             respuesta += f"👤 *COORDINADOR:*\n"
             respuesta += f"{self.coordinador}\n\n"
     
-    # Pie de página
         respuesta += "="*50 + "\n"
         respuesta += "¿Necesitas más información? 😊"
     
         return respuesta
     
 class Servicio:
-    def __init__(self, nombre: str, descripcion: str, pagos: str = "", dias: str = "", lugar: str = ""):
+    def __init__(self, nombre: str, descripcion: str = "", pagos: str = "", dias: str = "", lugar: str = ""):
         self.nombre = nombre
         self.descripcion = descripcion
         self.pagos = pagos
@@ -139,14 +133,35 @@ class Servicio:
     
     def obtener_info(self) -> str:
         respuesta = f"📋 *{self.nombre.upper()}*\n"
-        respuesta += f"{self.descripcion}\n"
-        if self.pagos:
-            respuesta += f"💳 Pagos: {self.pagos}\n"
-        if self.dias:
-            respuesta += f"📅 Días: {self.dias}\n"
-        if self.lugar:
-            respuesta += f"📍 Lugar: {self.lugar}\n"
+        respuesta += "="*50 + "\n\n"
+        
+        if self.descripcion and self.descripcion.strip():
+            respuesta += f"{self.descripcion}\n\n"
+        
+        if self.pagos and self.pagos.strip():
+            respuesta += f"💳 *Pagos:* {self.pagos}\n"
+        
+        if self.dias and self.dias.strip():
+            respuesta += f"📅 *Días:* {self.dias}\n"
+        
+        if self.lugar and self.lugar.strip():
+            respuesta += f"📍 *Lugar:* {self.lugar}\n"
+        
+        if not any([self.pagos, self.dias, self.lugar]):
+            respuesta += "ℹ️ Sin información adicional disponible\n"
+        
+        respuesta += "\n" + "="*50
+        respuesta += "\n¿Necesitas más información? 😊"
+        
         return respuesta
+
+class Suspension:
+    def __init__(self, fecha: str, suspension: str):
+        self.fecha = fecha
+        self.suspension = suspension
+    
+    def obtener_info(self) -> str:
+        return f"📅 {self.fecha}\n{self.suspension}"
 
 class BaseConocimiento:
 
@@ -157,6 +172,7 @@ class BaseConocimiento:
         self.carreras: Dict[str, Carrera] = {}
         self.tramites: Dict[str, str] = {}
         self.servicios = {}
+        self.suspensiones: List[Suspension] = []
         
     def agregar_horario(self, horario: Horario):
        
@@ -177,6 +193,9 @@ class BaseConocimiento:
     def agregar_servicio(self, servicio: Servicio):
         
         self.servicios[servicio.nombre.lower()] = servicio
+    
+    def agregar_suspension(self, suspension: Suspension):
+        self.suspensiones.append(suspension)
         
     def buscar_horario(self, servicio: str) -> Optional[Horario]:
        
@@ -201,3 +220,23 @@ class BaseConocimiento:
     
     def buscar_servicio(self, nombre: str) -> Optional[Servicio]:
         return self.servicios.get(nombre.lower())
+    
+    def obtener_suspension_hoy(self) -> Optional[str]:
+        from datetime import datetime
+        hoy = datetime.now().strftime('%d de %B').lower()
+        
+        meses = {
+            'january': 'enero', 'february': 'febrero', 'march': 'marzo', 
+            'april': 'abril', 'may': 'mayo', 'june': 'junio',
+            'july': 'julio', 'august': 'agosto', 'september': 'septiembre',
+            'october': 'octubre', 'november': 'noviembre', 'december': 'diciembre'
+        }
+        
+        for mes_en, mes_es in meses.items():
+            hoy = hoy.replace(mes_en, mes_es)
+        
+        for susp in self.suspensiones:
+            if susp.fecha.lower().strip() == hoy.strip():
+                return susp.suspension
+        
+        return None

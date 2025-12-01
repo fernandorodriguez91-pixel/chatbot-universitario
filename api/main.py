@@ -13,7 +13,7 @@ sys.path.append('..')
 from models.usuario import Usuario
 from models.mensaje import Mensaje
 from models.conocimiento import (
-    BaseConocimiento, Horario, Evento, Carrera, DiaSemana, Servicio
+    BaseConocimiento, Horario, Evento, Carrera, DiaSemana, Servicio, Suspension
 )
 from services.procesador_lenguaje import ProcesadorLenguajeNatural
 from services.gestor_respuestas import GestorRespuestas
@@ -29,7 +29,7 @@ except ImportError:
 app = FastAPI(
     title="Chatbot Universitario API",
     description="API REST para chatbot universitario con WhatsApp y Google Sheets",
-    version="2.1.0"
+    version="2.2.0"
 )
 
 app.add_middleware(
@@ -60,16 +60,12 @@ import base64
 google_sheets_reader = None
 if GOOGLE_SHEETS_AVAILABLE:
     try:
-        # Intenta leer archivo local primero
         CREDENTIALS_FILE = "api/credentials.json"
         
         if not os.path.exists(CREDENTIALS_FILE):
-            # Si no existe, intenta variable de entorno
             creds_b64 = os.getenv("GOOGLE_CREDENTIALS_B64")
             if creds_b64:
-                # Decodificar base64
                 creds_json = base64.b64decode(creds_b64).decode('utf-8')
-                # Crear archivo temporal
                 with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as f:
                     f.write(creds_json)
                     CREDENTIALS_FILE = f.name
@@ -95,6 +91,7 @@ class MensajeEntrada(BaseModel):
     eventos_sheets: Optional[List[Dict[str, Any]]] = None
     carreras_sheets: Optional[List[Dict[str, Any]]] = None
     servicios_sheets: Optional[List[Dict[str, Any]]] = None
+    suspensiones_sheets: Optional[List[Dict[str, Any]]] = None
 
 class RespuestaAPI(BaseModel):
     success: bool
@@ -104,16 +101,11 @@ class RespuestaAPI(BaseModel):
 
 
 def parse_fecha_google_sheets(fecha_str: str) -> Optional[datetime]:
-    """
-    Parsea fechas en múltiples formatos de Google Sheets
-    Ej: "25 de noviembre", "25/11/2025", "2025-11-25", "25 de noviembre - 10 de diciembre"
-    """
     if not fecha_str or str(fecha_str).strip() == '':
         return None
     
     fecha_str = str(fecha_str).strip()
     
-    # Meses en español
     meses_es = {
         'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
         'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
@@ -121,25 +113,20 @@ def parse_fecha_google_sheets(fecha_str: str) -> Optional[datetime]:
     }
     
     try:
-        # Formato: "25 de noviembre" o "25 de noviembre - 10 de diciembre"
         if ' de ' in fecha_str:
-            # Extraer primer fecha
             match = re.search(r'(\d+)\s+de\s+(\w+)', fecha_str)
             if match:
                 dia = int(match.group(1))
                 mes_nombre = match.group(2).lower()
                 mes = meses_es.get(mes_nombre, 1)
                 
-                # Asumir año actual o próximo
                 año = datetime.now().year
                 
-                # Si el mes ya pasó, usar próximo año
                 if datetime.now().month > mes or (datetime.now().month == mes and datetime.now().day > dia):
                     año += 1
                 
                 return datetime(año, mes, dia)
         
-        # Formato: "25/11/2025" o "25/11"
         elif '/' in fecha_str:
             partes = fecha_str.split('/')
             dia = int(partes[0])
@@ -147,7 +134,6 @@ def parse_fecha_google_sheets(fecha_str: str) -> Optional[datetime]:
             año = int(partes[2]) if len(partes) > 2 else datetime.now().year
             return datetime(año, mes, dia)
         
-        # Formato: "2025-11-25"
         elif '-' in fecha_str and len(fecha_str) >= 10:
             return datetime.fromisoformat(fecha_str.split(' ')[0])
         
@@ -158,7 +144,7 @@ def parse_fecha_google_sheets(fecha_str: str) -> Optional[datetime]:
     return None
 
 
-def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carreras: List[Dict], servicios: List[Dict]):
+def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carreras: List[Dict], servicios: List[Dict], suspensiones: List[Dict]):
     
     print("\n" + "="*60)
     print("📊 CARGANDO DATOS DESDE GOOGLE SHEETS")
@@ -168,6 +154,7 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
     base_conocimiento.eventos.clear()
     base_conocimiento.carreras.clear()
     base_conocimiento.servicios.clear()
+    base_conocimiento.suspensiones.clear()
     
     if horarios:
         print(f"\n📅 Procesando {len(horarios)} horarios...")
@@ -220,7 +207,6 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
                 fecha_inicio_str = str(e.get('Fecha_Inicio', ''))
                 fecha_fin_str = str(e.get('Fecha_Fin', ''))
                 
-                # ← NUEVA FUNCIÓN DE PARSEO CON SOPORTE A MÚLTIPLES FORMATOS
                 fecha_inicio = parse_fecha_google_sheets(fecha_inicio_str)
                 fecha_fin = parse_fecha_google_sheets(fecha_fin_str) if fecha_fin_str else fecha_inicio
                 
@@ -266,22 +252,41 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
         print(f"\n📋 Procesando {len(servicios)} servicios...")
         for s in servicios:
             try:
+                nombre = str(s.get('Nombre', 'Servicio')).strip()
+                tipo = str(s.get('Tipo', 'Servicio')).strip().lower()
+                
+                if not nombre or nombre == '':
+                    continue
+                
                 servicio = Servicio(
-                    nombre=str(s.get('Servicio', 'Servicio')).strip(),
-                    descripcion=str(s.get('Servicio social', '')).strip(),
+                    nombre=nombre,
+                    descripcion=str(s.get('Descripcion', '')).strip(),
                     pagos=str(s.get('Pagos', '')).strip(),
-                    dias=str(s.get('Dias Hábiles', '')).strip(),
+                    dias=str(s.get('Dias', '')).strip(),
                     lugar=str(s.get('Lugar', '')).strip()
                 )
                 base_conocimiento.agregar_servicio(servicio)
-                print(f"   ✅ {servicio.nombre}")
+                print(f"   ✅ [{tipo.upper()}] {servicio.nombre}")
             except Exception as e:
                 print(f"   ❌ Error procesando servicio: {e}")
+    
+    if suspensiones:
+        print(f"\n⏸️ Procesando {len(suspensiones)} suspensiones...")
+        for susp in suspensiones:
+            try:
+                suspension = Suspension(
+                    fecha=str(susp.get('Fecha', '')).strip(),
+                    suspension=str(susp.get('Suspension', '')).strip()
+                )
+                base_conocimiento.agregar_suspension(suspension)
+                print(f"   ✅ {suspension.fecha}: {suspension.suspension}")
+            except Exception as e:
+                print(f"   ❌ Error procesando suspensión: {e}")
     
     print("\n" + "="*60)
     print(f"✅ DATOS CARGADOS: {len(base_conocimiento.horarios)} horarios, "
           f"{len(base_conocimiento.eventos)} eventos, {len(base_conocimiento.carreras)} carreras, "
-          f"{len(base_conocimiento.servicios)} servicios")
+          f"{len(base_conocimiento.servicios)} servicios, {len(base_conocimiento.suspensiones)} suspensiones")
     print("="*60 + "\n")
 
 
@@ -289,14 +294,15 @@ def cargar_datos_desde_sheets(horarios: List[Dict], eventos: List[Dict], carrera
 async def root():
     return {
         "mensaje": "API Chatbot Universitario con Google Sheets",
-        "version": "2.1.0",
+        "version": "2.2.0",
         "status": "activo",
         "google_sheets_disponible": GOOGLE_SHEETS_AVAILABLE and google_sheets_reader is not None,
         "datos_cargados": {
             "horarios": len(base_conocimiento.horarios),
             "eventos": len(base_conocimiento.eventos),
             "carreras": len(base_conocimiento.carreras),
-            "servicios": len(base_conocimiento.servicios)
+            "servicios": len(base_conocimiento.servicios),
+            "suspensiones": len(base_conocimiento.suspensiones)
         }
     }
 
@@ -337,7 +343,8 @@ async def webhook_whatsapp_twilio(request: Request):
                     all_data['horarios'],
                     all_data['eventos'],
                     all_data['carreras'],
-                    all_data['servicios']
+                    all_data['servicios'],
+                    all_data.get('suspensiones', [])
                 )
             except Exception as e:
                 print(f"⚠️  Error leyendo Google Sheets: {e}")
@@ -385,12 +392,13 @@ async def webhook_whatsapp(datos: MensajeEntrada):
     try:
         print(f"\n📨 Mensaje de {datos.telefono}: {datos.contenido}")
         
-        if datos.horarios_sheets or datos.eventos_sheets or datos.carreras_sheets or datos.servicios_sheets:
+        if datos.horarios_sheets or datos.eventos_sheets or datos.carreras_sheets or datos.servicios_sheets or datos.suspensiones_sheets:
             cargar_datos_desde_sheets(
                 datos.horarios_sheets or [],
                 datos.eventos_sheets or [],
                 datos.carreras_sheets or [],
-                datos.servicios_sheets or []
+                datos.servicios_sheets or [],
+                datos.suspensiones_sheets or []
             )
         
         telefono = datos.telefono
@@ -443,9 +451,10 @@ async def webhook_raw(request: Request):
         eventos = body.get('eventos_sheets', [])
         carreras = body.get('carreras_sheets', [])
         servicios = body.get('servicios_sheets', [])
+        suspensiones = body.get('suspensiones_sheets', [])
         
-        if horarios or eventos or carreras or servicios:
-            cargar_datos_desde_sheets(horarios, eventos, carreras, servicios)
+        if horarios or eventos or carreras or servicios or suspensiones:
+            cargar_datos_desde_sheets(horarios, eventos, carreras, servicios, suspensiones)
         
         usuario = base_datos.obtener_usuario(telefono)
         if not usuario:
@@ -549,6 +558,19 @@ async def listar_servicios():
         for nombre, servicio in base_conocimiento.servicios.items()
     }
 
+@app.get("/suspensiones")
+async def listar_suspensiones():
+    return {
+        "total": len(base_conocimiento.suspensiones),
+        "suspensiones": [
+            {
+                "fecha": s.fecha,
+                "suspension": s.suspension
+            }
+            for s in base_conocimiento.suspensiones
+        ]
+    }
+
 @app.get("/health")
 async def health_check():
     return {
@@ -559,7 +581,8 @@ async def health_check():
             "horarios": len(base_conocimiento.horarios),
             "eventos": len(base_conocimiento.eventos),
             "carreras": len(base_conocimiento.carreras),
-            "servicios": len(base_conocimiento.servicios)
+            "servicios": len(base_conocimiento.servicios),
+            "suspensiones": len(base_conocimiento.suspensiones)
         }
     }
 

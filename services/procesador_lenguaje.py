@@ -16,7 +16,7 @@ class ProcesadorLenguajeNatural:
         ]
         
         self.palabras_carrera = [
-            'carrera', 'licenciatura', 'ingenieria', 'ingeniería',  # ← Sin y con acento
+            'carrera', 'licenciatura', 'ingenieria', 'ingeniería',
             'programa', 'estudiar', 'materias', 'plan de estudios', 
             'semestre', 'mecatronica', 'mecatonica', 'ingenieria mecatronica'
         ]       
@@ -29,6 +29,11 @@ class ProcesadorLenguajeNatural:
         self.palabras_servicio = [
             'servicio', 'servicios', 'disponible', 'que hay',
             'ofrecen', 'oferta', 'recursos', 'instalaciones'
+        ]
+        
+        self.palabras_suspension = [
+            'suspensión', 'suspensiones', 'clases', 'hay clases', 'cancelado',
+            'canceladas', 'suspendido', 'actividades', 'hoy', 'suspension'
         ]
         
         self.saludos = [
@@ -63,13 +68,15 @@ class ProcesadorLenguajeNatural:
         score_carrera = sum(1 for palabra in self.palabras_carrera if palabra in texto_limpio)
         score_tramite = sum(1 for palabra in self.palabras_tramite if palabra in texto_limpio)
         score_servicio = sum(1 for palabra in self.palabras_servicio if palabra in texto_limpio)
+        score_suspension = sum(1 for palabra in self.palabras_suspension if palabra in texto_limpio)
         
         scores = {
             TipoMensaje.CONSULTA_HORARIO: score_horario,
             TipoMensaje.CONSULTA_EVENTO: score_evento,
             TipoMensaje.CONSULTA_CARRERA: score_carrera,
             TipoMensaje.CONSULTA_TRAMITE: score_tramite,
-            TipoMensaje.CONSULTA_SERVICIO: score_servicio
+            TipoMensaje.CONSULTA_SERVICIO: score_servicio,
+            TipoMensaje.CONSULTA_SUSPENSION: score_suspension
         }
         
         max_score = max(scores.values())
