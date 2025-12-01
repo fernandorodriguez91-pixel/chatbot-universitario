@@ -41,7 +41,7 @@ class GestorRespuestas:
             return self._respuesta_tramites()
         
         elif tipo == TipoMensaje.CONSULTA_SUSPENSION:
-            return self._respuesta_suspensiones()
+            return self._respuesta_suspensiones(mensaje.contenido)
         
         else:
             return self._respuesta_default()
@@ -184,15 +184,15 @@ class GestorRespuestas:
         
         return respuesta
     
-    def _respuesta_suspensiones(self) -> str:
-        suspension_hoy = self.base_conocimiento.obtener_suspension_hoy()
-        
-        if suspension_hoy is None:
-            return "No hay información de suspensiones para hoy. 📚"
-        
-        respuesta = "📅 *SUSPENSIONES DE HOY*\n\n"
-        respuesta += suspension_hoy
-        
+    def _respuesta_suspensiones(self, mensaje_contenido: str) -> str:
+        suspension = self.base_conocimiento.obtener_suspension_fecha_relativa(mensaje_contenido)
+    
+        if suspension is None:
+            return "No hay información de suspensiones para la fecha consultada. 📚"
+    
+        respuesta = "📅 *SUSPENSIONES*\n\n"
+        respuesta += suspension
+    
         return respuesta
     
     def _respuesta_default(self) -> str:

@@ -26,9 +26,11 @@ class ProcesadorLenguajeNatural:
             'certificado', 'título', 'como solicitar', 'requisitos'
         ]
         
-        self.palabras_servicio = [
-            'servicio', 'servicios', 'disponible', 'que hay',
-            'ofrecen', 'oferta', 'recursos', 'instalaciones'
+        self.palabras_suspension = [
+            'suspensión', 'suspensiones', 'clases', 'hay clases', 'cancelado',
+            'canceladas', 'suspendido', 'actividades', 'hoy', 'suspension',
+            'mañana', 'manana', 'mañana', 'pasado', 'lunes', 'martes', 'miercoles',
+            'miércoles', 'jueves', 'viernes'
         ]
         
         self.palabras_suspension = [

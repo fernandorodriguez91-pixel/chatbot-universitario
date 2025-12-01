@@ -221,20 +221,22 @@ class BaseConocimiento:
     def buscar_servicio(self, nombre: str) -> Optional[Servicio]:
         return self.servicios.get(nombre.lower())
 
-    def obtener_suspension_hoy(self) -> Optional[str]:
-        from datetime import datetime
+    def obtener_suspension(self, fecha: datetime = None) -> Optional[str]:
+        from datetime import datetime, timedelta
     
-        hoy = datetime.now()
-        dia_hoy = hoy.day
+        if fecha is None:
+            fecha = datetime.now()
+    
+        dia = fecha.day
     
         meses = {
-        1: 'enero', 2: 'febrero', 3: 'marzo', 4: 'abril',
-        5: 'mayo', 6: 'junio', 7: 'julio', 8: 'agosto',
-        9: 'septiembre', 10: 'octubre', 11: 'noviembre', 12: 'diciembre'
-    }
+            1: 'enero', 2: 'febrero', 3: 'marzo', 4: 'abril',
+            5: 'mayo', 6: 'junio', 7: 'julio', 8: 'agosto',
+            9: 'septiembre', 10: 'octubre', 11: 'noviembre', 12: 'diciembre'
+        }
     
-        mes_hoy = meses[hoy.month]
-        fecha_buscada = f"{dia_hoy} de {mes_hoy}".lower()
+        mes = meses[fecha.month]
+        fecha_buscada = f"{dia} de {mes}".lower()
     
         for susp in self.suspensiones:
             fecha_suspension = susp.fecha.lower().strip()
@@ -242,3 +244,64 @@ class BaseConocimiento:
                 return susp.suspension
     
         return None
+
+    def obtener_suspension_hoy(self) -> Optional[str]:
+        from datetime import datetime
+        return self.obtener_suspension(datetime.now())
+
+    def obtener_suspension_manana(self) -> Optional[str]:
+        from datetime import datetime, timedelta
+        manana = datetime.now() + timedelta(days=1)
+        return self.obtener_suspension(manana)
+
+    def obtener_suspension_fecha_relativa(self, texto: str) -> Optional[str]:
+        from datetime import datetime, timedelta
+    
+        texto_limpio = texto.lower()
+    
+        if 'hoy' in texto_limpio:
+            return self.obtener_suspension(datetime.now())
+    
+        elif 'mañana' in texto_limpio or 'manana' in texto_limpio:
+            return self.obtener_suspension(datetime.now() + timedelta(days=1))
+    
+        elif 'pasado mañana' in texto_limpio or 'pasado manana' in texto_limpio:
+            return self.obtener_suspension(datetime.now() + timedelta(days=2))
+    
+        elif 'próximo lunes' in texto_limpio or 'proximo lunes' in texto_limpio:
+            hoy = datetime.now()
+            dias_hasta_lunes = (7 - hoy.weekday()) % 7
+            if dias_hasta_lunes == 0:
+                dias_hasta_lunes = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_lunes))
+    
+        elif 'próximo martes' in texto_limpio or 'proximo martes' in texto_limpio:
+            hoy = datetime.now()
+            dias_hasta_martes = (8 - hoy.weekday()) % 7
+            if dias_hasta_martes == 0:
+                dias_hasta_martes = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_martes))
+    
+        elif 'próximo miércoles' in texto_limpio or 'proximo miercoles' in texto_limpio or 'proximo miercoles' in texto_limpio:
+            hoy = datetime.now()
+            dias_hasta_miercoles = (9 - hoy.weekday()) % 7
+            if dias_hasta_miercoles == 0:
+                dias_hasta_miercoles = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_miercoles))
+    
+        elif 'próximo jueves' in texto_limpio or 'proximo jueves' in texto_limpio:
+            hoy = datetime.now()
+            dias_hasta_jueves = (10 - hoy.weekday()) % 7
+            if dias_hasta_jueves == 0:
+                dias_hasta_jueves = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_jueves))
+    
+        elif 'próximo viernes' in texto_limpio or 'proximo viernes' in texto_limpio:
+            hoy = datetime.now()
+            dias_hasta_viernes = (11 - hoy.weekday()) % 7
+            if dias_hasta_viernes == 0:
+                dias_hasta_viernes = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_viernes))
+    
+        else:
+            return None
