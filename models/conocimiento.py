@@ -1,6 +1,7 @@
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from typing import List, Dict, Optional
 from enum import Enum
+import re
 
 class DiaSemana(Enum):
     
@@ -220,88 +221,97 @@ class BaseConocimiento:
     
     def buscar_servicio(self, nombre: str) -> Optional[Servicio]:
         return self.servicios.get(nombre.lower())
-
-    def obtener_suspension(self, fecha: datetime = None) -> Optional[str]:
-        from datetime import datetime, timedelta
     
+    def obtener_suspension(self, fecha: datetime = None) -> Optional[str]:
         if fecha is None:
             fecha = datetime.now()
-    
+        
         dia = fecha.day
-    
+        
         meses = {
             1: 'enero', 2: 'febrero', 3: 'marzo', 4: 'abril',
             5: 'mayo', 6: 'junio', 7: 'julio', 8: 'agosto',
             9: 'septiembre', 10: 'octubre', 11: 'noviembre', 12: 'diciembre'
         }
-    
+        
         mes = meses[fecha.month]
         fecha_buscada = f"{dia} de {mes}".lower()
-    
+        
         for susp in self.suspensiones:
             fecha_suspension = susp.fecha.lower().strip()
             if fecha_suspension == fecha_buscada:
                 return susp.suspension
-    
+        
         return None
 
     def obtener_suspension_hoy(self) -> Optional[str]:
-        from datetime import datetime
         return self.obtener_suspension(datetime.now())
 
     def obtener_suspension_manana(self) -> Optional[str]:
-        from datetime import datetime, timedelta
         manana = datetime.now() + timedelta(days=1)
         return self.obtener_suspension(manana)
 
     def obtener_suspension_fecha_relativa(self, texto: str) -> Optional[str]:
-        from datetime import datetime, timedelta
-    
         texto_limpio = texto.lower()
-    
+        
         if 'hoy' in texto_limpio:
             return self.obtener_suspension(datetime.now())
-    
+        
         elif 'mañana' in texto_limpio or 'manana' in texto_limpio:
             return self.obtener_suspension(datetime.now() + timedelta(days=1))
-    
+        
         elif 'pasado mañana' in texto_limpio or 'pasado manana' in texto_limpio:
             return self.obtener_suspension(datetime.now() + timedelta(days=2))
-    
-        elif 'próximo lunes' in texto_limpio or 'proximo lunes' in texto_limpio:
+        
+        match = re.search(r'(\d+)\s+de\s+(\w+)', texto_limpio)
+        if match:
+            dia = int(match.group(1))
+            mes_nombre = match.group(2)
+            
+            meses = {
+                'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4,
+                'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
+                'septiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12
+            }
+            
+            mes = meses.get(mes_nombre)
+            if mes:
+                fecha = datetime(datetime.now().year, mes, dia)
+                return self.obtener_suspension(fecha)
+        
+        if 'lunes' in texto_limpio:
             hoy = datetime.now()
-            dias_hasta_lunes = (7 - hoy.weekday()) % 7
-            if dias_hasta_lunes == 0:
-                dias_hasta_lunes = 7
-            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_lunes))
-    
-        elif 'próximo martes' in texto_limpio or 'proximo martes' in texto_limpio:
+            dias_hasta = (7 - hoy.weekday()) % 7
+            if dias_hasta == 0:
+                dias_hasta = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta))
+        
+        elif 'martes' in texto_limpio:
             hoy = datetime.now()
-            dias_hasta_martes = (8 - hoy.weekday()) % 7
-            if dias_hasta_martes == 0:
-                dias_hasta_martes = 7
-            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_martes))
-    
-        elif 'próximo miércoles' in texto_limpio or 'proximo miercoles' in texto_limpio or 'proximo miercoles' in texto_limpio:
+            dias_hasta = (8 - hoy.weekday()) % 7
+            if dias_hasta == 0:
+                dias_hasta = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta))
+        
+        elif 'miercoles' in texto_limpio or 'miércoles' in texto_limpio:
             hoy = datetime.now()
-            dias_hasta_miercoles = (9 - hoy.weekday()) % 7
-            if dias_hasta_miercoles == 0:
-                dias_hasta_miercoles = 7
-            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_miercoles))
-    
-        elif 'próximo jueves' in texto_limpio or 'proximo jueves' in texto_limpio:
+            dias_hasta = (9 - hoy.weekday()) % 7
+            if dias_hasta == 0:
+                dias_hasta = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta))
+        
+        elif 'jueves' in texto_limpio:
             hoy = datetime.now()
-            dias_hasta_jueves = (10 - hoy.weekday()) % 7
-            if dias_hasta_jueves == 0:
-                dias_hasta_jueves = 7
-            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_jueves))
-    
-        elif 'próximo viernes' in texto_limpio or 'proximo viernes' in texto_limpio:
+            dias_hasta = (10 - hoy.weekday()) % 7
+            if dias_hasta == 0:
+                dias_hasta = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta))
+        
+        elif 'viernes' in texto_limpio:
             hoy = datetime.now()
-            dias_hasta_viernes = (11 - hoy.weekday()) % 7
-            if dias_hasta_viernes == 0:
-                dias_hasta_viernes = 7
-            return self.obtener_suspension(hoy + timedelta(days=dias_hasta_viernes))
-    
-        else:
-            return None
+            dias_hasta = (11 - hoy.weekday()) % 7
+            if dias_hasta == 0:
+                dias_hasta = 7
+            return self.obtener_suspension(hoy + timedelta(days=dias_hasta))
+        
+        return None
