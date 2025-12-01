@@ -220,25 +220,25 @@ class BaseConocimiento:
     
     def buscar_servicio(self, nombre: str) -> Optional[Servicio]:
         return self.servicios.get(nombre.lower())
+
+    def obtener_suspension_hoy(self) -> Optional[str]:
+        from datetime import datetime
     
-def obtener_suspension_hoy(self) -> Optional[str]:
-    from datetime import datetime
+        hoy = datetime.now()
+        dia_hoy = hoy.day
     
-    hoy = datetime.now()
-    dia_hoy = hoy.day
-    
-    meses = {
+        meses = {
         1: 'enero', 2: 'febrero', 3: 'marzo', 4: 'abril',
         5: 'mayo', 6: 'junio', 7: 'julio', 8: 'agosto',
         9: 'septiembre', 10: 'octubre', 11: 'noviembre', 12: 'diciembre'
     }
     
-    mes_hoy = meses[hoy.month]
-    fecha_buscada = f"{dia_hoy} de {mes_hoy}".lower()
+        mes_hoy = meses[hoy.month]
+        fecha_buscada = f"{dia_hoy} de {mes_hoy}".lower()
     
-    for susp in self.suspensiones:
-        fecha_suspension = susp.fecha.lower().strip()
-        if fecha_suspension == fecha_buscada:
-            return susp.suspension
+        for susp in self.suspensiones:
+            fecha_suspension = susp.fecha.lower().strip()
+            if fecha_suspension == fecha_buscada:
+                return susp.suspension
     
-    return None
+        return None
