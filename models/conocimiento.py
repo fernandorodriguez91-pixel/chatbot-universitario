@@ -235,11 +235,15 @@ class BaseConocimiento:
         }
         
         mes = meses[fecha.month]
-        fecha_buscada = f"{dia} de {mes}".lower()
+        
+    
+        fecha_buscada_1 = f"{dia} de {mes}".lower() 
+        fecha_buscada_2 = f"{dia:02d} de {mes}".lower()  
         
         for susp in self.suspensiones:
             fecha_suspension = susp.fecha.lower().strip()
-            if fecha_suspension == fecha_buscada:
+        
+            if fecha_suspension == fecha_buscada_1 or fecha_suspension == fecha_buscada_2:
                 return susp.suspension
         
         return None
