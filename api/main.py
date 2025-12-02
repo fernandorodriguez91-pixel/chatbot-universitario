@@ -7,6 +7,7 @@ from datetime import datetime, time
 import json
 import os
 import re
+import xml.sax.saxutils as saxutils
 
 import sys
 sys.path.append('..')
@@ -364,12 +365,14 @@ async def webhook_whatsapp_twilio(request: Request):
         respuesta_texto = gestor_respuestas.generar_respuesta(mensaje_usuario)
         print(f"🤖 Respuesta: {respuesta_texto[:100]}...\n")
         
+        respuesta_segura = saxutils.escape(respuesta_texto)
+        
         mensaje_bot = Mensaje(telefono=telefono, contenido=respuesta_texto, es_bot=True)
         base_datos.guardar_mensaje(mensaje_bot)
         
         xml_response = f"""<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Message>{respuesta_texto}</Message>
+    <Message>{respuesta_segura}</Message>
 </Response>"""
         
         return Response(content=xml_response, media_type="application/xml")
